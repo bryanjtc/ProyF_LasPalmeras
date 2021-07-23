@@ -89,6 +89,7 @@ Public Class frmNewPedido
         End Using
         connect.Close()
         txtTotal.Text = (subTotal + Convert.ToDouble(costoEntrega)).ToString()
+        frmAddCliente.actualizarTablas()
     End Sub
 
     Private Sub btnAgregarCliente_Click(sender As Object, e As EventArgs) Handles btnAgregarCliente.Click
