@@ -28,20 +28,20 @@ Partial Class frmAdmin
         Me.btnAgregarMotorizado = New System.Windows.Forms.Button()
         Me.btnVerClientes = New System.Windows.Forms.Button()
         Me.lblTituloAdmin = New System.Windows.Forms.Label()
-        Me.pctRegresar = New System.Windows.Forms.PictureBox()
         Me.lblSalir = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblRegresar = New System.Windows.Forms.Label()
-        Me.pctProducto = New System.Windows.Forms.PictureBox()
-        Me.pctRestaurante = New System.Windows.Forms.PictureBox()
-        Me.pctMotorizado = New System.Windows.Forms.PictureBox()
+        Me.pctSalir = New System.Windows.Forms.PictureBox()
         Me.pctCliente = New System.Windows.Forms.PictureBox()
-        CType(Me.pctRegresar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pctProducto, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pctRestaurante, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pctMotorizado, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pctMotorizado = New System.Windows.Forms.PictureBox()
+        Me.pctRestaurante = New System.Windows.Forms.PictureBox()
+        Me.pctProducto = New System.Windows.Forms.PictureBox()
+        Me.pctRegresar = New System.Windows.Forms.PictureBox()
+        CType(Me.pctSalir, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pctCliente, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctMotorizado, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctRestaurante, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctProducto, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctRegresar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnAgregarProducto
@@ -54,9 +54,9 @@ Partial Class frmAdmin
         Me.btnAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAgregarProducto.Font = New System.Drawing.Font("Segoe UI", 16.2!)
         Me.btnAgregarProducto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnAgregarProducto.Location = New System.Drawing.Point(193, 126)
+        Me.btnAgregarProducto.Location = New System.Drawing.Point(207, 127)
         Me.btnAgregarProducto.Name = "btnAgregarProducto"
-        Me.btnAgregarProducto.Size = New System.Drawing.Size(339, 45)
+        Me.btnAgregarProducto.Size = New System.Drawing.Size(339, 57)
         Me.btnAgregarProducto.TabIndex = 0
         Me.btnAgregarProducto.Text = "Agregar Producto"
         Me.btnAgregarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -72,9 +72,9 @@ Partial Class frmAdmin
         Me.btnAgregarRest.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAgregarRest.Font = New System.Drawing.Font("Segoe UI", 16.2!)
         Me.btnAgregarRest.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnAgregarRest.Location = New System.Drawing.Point(193, 198)
+        Me.btnAgregarRest.Location = New System.Drawing.Point(207, 201)
         Me.btnAgregarRest.Name = "btnAgregarRest"
-        Me.btnAgregarRest.Size = New System.Drawing.Size(339, 45)
+        Me.btnAgregarRest.Size = New System.Drawing.Size(339, 56)
         Me.btnAgregarRest.TabIndex = 1
         Me.btnAgregarRest.Text = "Agregar Restaurante"
         Me.btnAgregarRest.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -90,9 +90,9 @@ Partial Class frmAdmin
         Me.btnAgregarMotorizado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAgregarMotorizado.Font = New System.Drawing.Font("Segoe UI", 16.2!)
         Me.btnAgregarMotorizado.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnAgregarMotorizado.Location = New System.Drawing.Point(193, 270)
+        Me.btnAgregarMotorizado.Location = New System.Drawing.Point(207, 272)
         Me.btnAgregarMotorizado.Name = "btnAgregarMotorizado"
-        Me.btnAgregarMotorizado.Size = New System.Drawing.Size(339, 45)
+        Me.btnAgregarMotorizado.Size = New System.Drawing.Size(339, 58)
         Me.btnAgregarMotorizado.TabIndex = 2
         Me.btnAgregarMotorizado.Text = "Agregar Motorizado"
         Me.btnAgregarMotorizado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -108,9 +108,9 @@ Partial Class frmAdmin
         Me.btnVerClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVerClientes.Font = New System.Drawing.Font("Segoe UI", 16.2!)
         Me.btnVerClientes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnVerClientes.Location = New System.Drawing.Point(193, 338)
+        Me.btnVerClientes.Location = New System.Drawing.Point(207, 351)
         Me.btnVerClientes.Name = "btnVerClientes"
-        Me.btnVerClientes.Size = New System.Drawing.Size(339, 45)
+        Me.btnVerClientes.Size = New System.Drawing.Size(339, 59)
         Me.btnVerClientes.TabIndex = 3
         Me.btnVerClientes.Text = "Ver Clientes"
         Me.btnVerClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -121,21 +121,12 @@ Partial Class frmAdmin
         Me.lblTituloAdmin.AutoSize = True
         Me.lblTituloAdmin.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold)
         Me.lblTituloAdmin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.lblTituloAdmin.Location = New System.Drawing.Point(110, 43)
+        Me.lblTituloAdmin.Location = New System.Drawing.Point(106, 32)
         Me.lblTituloAdmin.Name = "lblTituloAdmin"
         Me.lblTituloAdmin.Size = New System.Drawing.Size(631, 81)
         Me.lblTituloAdmin.TabIndex = 4
         Me.lblTituloAdmin.Text = "Menu Administrativo"
         Me.lblTituloAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'pctRegresar
-        '
-        Me.pctRegresar.Location = New System.Drawing.Point(0, 0)
-        Me.pctRegresar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.pctRegresar.Name = "pctRegresar"
-        Me.pctRegresar.Size = New System.Drawing.Size(100, 40)
-        Me.pctRegresar.TabIndex = 15
-        Me.pctRegresar.TabStop = False
         '
         'lblSalir
         '
@@ -147,15 +138,6 @@ Partial Class frmAdmin
         Me.lblSalir.TabIndex = 12
         Me.lblSalir.Text = "Salir"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 40)
-        Me.PictureBox1.TabIndex = 14
-        Me.PictureBox1.TabStop = False
-        '
         'lblRegresar
         '
         Me.lblRegresar.AutoSize = True
@@ -166,41 +148,69 @@ Partial Class frmAdmin
         Me.lblRegresar.TabIndex = 13
         Me.lblRegresar.Text = "Regresar"
         '
-        'pctProducto
+        'pctSalir
         '
-        Me.pctProducto.Location = New System.Drawing.Point(0, 0)
-        Me.pctProducto.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.pctProducto.Name = "pctProducto"
-        Me.pctProducto.Size = New System.Drawing.Size(100, 40)
-        Me.pctProducto.TabIndex = 3
-        Me.pctProducto.TabStop = False
-        '
-        'pctRestaurante
-        '
-        Me.pctRestaurante.Location = New System.Drawing.Point(0, 0)
-        Me.pctRestaurante.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.pctRestaurante.Name = "pctRestaurante"
-        Me.pctRestaurante.Size = New System.Drawing.Size(100, 40)
-        Me.pctRestaurante.TabIndex = 2
-        Me.pctRestaurante.TabStop = False
-        '
-        'pctMotorizado
-        '
-        Me.pctMotorizado.Location = New System.Drawing.Point(0, 0)
-        Me.pctMotorizado.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.pctMotorizado.Name = "pctMotorizado"
-        Me.pctMotorizado.Size = New System.Drawing.Size(100, 40)
-        Me.pctMotorizado.TabIndex = 1
-        Me.pctMotorizado.TabStop = False
+        Me.pctSalir.Image = Global.ProyF_LasPalmeras.My.Resources.Resources._exit
+        Me.pctSalir.Location = New System.Drawing.Point(685, 438)
+        Me.pctSalir.Name = "pctSalir"
+        Me.pctSalir.Size = New System.Drawing.Size(30, 30)
+        Me.pctSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctSalir.TabIndex = 18
+        Me.pctSalir.TabStop = False
         '
         'pctCliente
         '
-        Me.pctCliente.Location = New System.Drawing.Point(0, 0)
-        Me.pctCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pctCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.pctCliente.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.customer
+        Me.pctCliente.Location = New System.Drawing.Point(493, 362)
         Me.pctCliente.Name = "pctCliente"
-        Me.pctCliente.Size = New System.Drawing.Size(100, 40)
-        Me.pctCliente.TabIndex = 0
+        Me.pctCliente.Size = New System.Drawing.Size(35, 35)
+        Me.pctCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctCliente.TabIndex = 17
         Me.pctCliente.TabStop = False
+        '
+        'pctMotorizado
+        '
+        Me.pctMotorizado.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.pctMotorizado.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.delivery_bike
+        Me.pctMotorizado.Location = New System.Drawing.Point(493, 284)
+        Me.pctMotorizado.Name = "pctMotorizado"
+        Me.pctMotorizado.Size = New System.Drawing.Size(35, 35)
+        Me.pctMotorizado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctMotorizado.TabIndex = 16
+        Me.pctMotorizado.TabStop = False
+        '
+        'pctRestaurante
+        '
+        Me.pctRestaurante.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.pctRestaurante.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.restaurant
+        Me.pctRestaurante.Location = New System.Drawing.Point(493, 211)
+        Me.pctRestaurante.Name = "pctRestaurante"
+        Me.pctRestaurante.Size = New System.Drawing.Size(35, 35)
+        Me.pctRestaurante.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctRestaurante.TabIndex = 15
+        Me.pctRestaurante.TabStop = False
+        '
+        'pctProducto
+        '
+        Me.pctProducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.pctProducto.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.received
+        Me.pctProducto.Location = New System.Drawing.Point(493, 139)
+        Me.pctProducto.Name = "pctProducto"
+        Me.pctProducto.Size = New System.Drawing.Size(35, 35)
+        Me.pctProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctProducto.TabIndex = 14
+        Me.pctProducto.TabStop = False
+        '
+        'pctRegresar
+        '
+        Me.pctRegresar.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.back
+        Me.pctRegresar.Location = New System.Drawing.Point(41, 49)
+        Me.pctRegresar.Name = "pctRegresar"
+        Me.pctRegresar.Size = New System.Drawing.Size(50, 50)
+        Me.pctRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctRegresar.TabIndex = 5
+        Me.pctRegresar.TabStop = False
         '
         'frmAdmin
         '
@@ -208,13 +218,13 @@ Partial Class frmAdmin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(749, 480)
+        Me.Controls.Add(Me.pctSalir)
         Me.Controls.Add(Me.pctCliente)
         Me.Controls.Add(Me.pctMotorizado)
         Me.Controls.Add(Me.pctRestaurante)
         Me.Controls.Add(Me.pctProducto)
         Me.Controls.Add(Me.lblRegresar)
         Me.Controls.Add(Me.lblSalir)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.pctRegresar)
         Me.Controls.Add(Me.lblTituloAdmin)
         Me.Controls.Add(Me.btnVerClientes)
@@ -225,12 +235,12 @@ Partial Class frmAdmin
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmAdmin"
         Me.Text = "Administracion"
-        CType(Me.pctRegresar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pctProducto, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pctRestaurante, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pctMotorizado, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctSalir, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pctCliente, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctMotorizado, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctRestaurante, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctProducto, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctRegresar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -247,10 +257,10 @@ Partial Class frmAdmin
     Friend WithEvents lblTituloAdmin As Label
     Friend WithEvents pctRegresar As PictureBox
     Friend WithEvents lblSalir As Label
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents lblRegresar As Label
     Friend WithEvents pctProducto As PictureBox
     Friend WithEvents pctRestaurante As PictureBox
     Friend WithEvents pctMotorizado As PictureBox
     Friend WithEvents pctCliente As PictureBox
+    Friend WithEvents pctSalir As PictureBox
 End Class

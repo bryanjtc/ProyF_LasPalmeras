@@ -75,9 +75,9 @@ Partial Class frmVerPedidos
         Me.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSelect.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnSelect.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnSelect.Location = New System.Drawing.Point(580, 109)
+        Me.btnSelect.Location = New System.Drawing.Point(580, 102)
         Me.btnSelect.Name = "btnSelect"
-        Me.btnSelect.Size = New System.Drawing.Size(86, 34)
+        Me.btnSelect.Size = New System.Drawing.Size(86, 46)
         Me.btnSelect.TabIndex = 3
         Me.btnSelect.Text = "Ver"
         Me.btnSelect.UseVisualStyleBackColor = True
@@ -94,7 +94,7 @@ Partial Class frmVerPedidos
         Me.btmVerDetalles.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.btmVerDetalles.Location = New System.Drawing.Point(508, 512)
         Me.btmVerDetalles.Name = "btmVerDetalles"
-        Me.btmVerDetalles.Size = New System.Drawing.Size(158, 39)
+        Me.btmVerDetalles.Size = New System.Drawing.Size(158, 52)
         Me.btmVerDetalles.TabIndex = 4
         Me.btmVerDetalles.Text = "Ver Detalles"
         Me.btmVerDetalles.UseVisualStyleBackColor = True
@@ -103,7 +103,7 @@ Partial Class frmVerPedidos
         '
         Me.lblRegresar.AutoSize = True
         Me.lblRegresar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.lblRegresar.Location = New System.Drawing.Point(35, 62)
+        Me.lblRegresar.Location = New System.Drawing.Point(35, 66)
         Me.lblRegresar.Name = "lblRegresar"
         Me.lblRegresar.Size = New System.Drawing.Size(90, 28)
         Me.lblRegresar.TabIndex = 26
@@ -111,11 +111,12 @@ Partial Class frmVerPedidos
         '
         'pctRegresar
         '
-        Me.pctRegresar.Location = New System.Drawing.Point(0, 0)
-        Me.pctRegresar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pctRegresar.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.back
+        Me.pctRegresar.Location = New System.Drawing.Point(52, 13)
         Me.pctRegresar.Name = "pctRegresar"
-        Me.pctRegresar.Size = New System.Drawing.Size(100, 40)
-        Me.pctRegresar.TabIndex = 27
+        Me.pctRegresar.Size = New System.Drawing.Size(50, 50)
+        Me.pctRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctRegresar.TabIndex = 25
         Me.pctRegresar.TabStop = False
         '
         'lbltTitulo
@@ -133,7 +134,7 @@ Partial Class frmVerPedidos
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(696, 566)
+        Me.ClientSize = New System.Drawing.Size(696, 579)
         Me.Controls.Add(Me.lblRegresar)
         Me.Controls.Add(Me.pctRegresar)
         Me.Controls.Add(Me.lbltTitulo)

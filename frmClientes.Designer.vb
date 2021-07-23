@@ -47,11 +47,11 @@ Partial Class frmClientes
         Me.txtTotal = New System.Windows.Forms.TextBox()
         Me.lblTitulo = New System.Windows.Forms.Label()
         Me.lblRegresar = New System.Windows.Forms.Label()
-        Me.pctRegresar = New System.Windows.Forms.PictureBox()
         Me.BindingSourceClientes = New System.Windows.Forms.BindingSource(Me.components)
+        Me.pctRegresar = New System.Windows.Forms.PictureBox()
         CType(Me.dgvPedidos, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pctRegresar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BindingSourceClientes, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctRegresar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblNombreCliente
@@ -302,10 +302,11 @@ Partial Class frmClientes
         '
         'pctRegresar
         '
-        Me.pctRegresar.Location = New System.Drawing.Point(0, 0)
-        Me.pctRegresar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pctRegresar.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.back
+        Me.pctRegresar.Location = New System.Drawing.Point(36, 12)
         Me.pctRegresar.Name = "pctRegresar"
-        Me.pctRegresar.Size = New System.Drawing.Size(100, 40)
+        Me.pctRegresar.Size = New System.Drawing.Size(50, 50)
+        Me.pctRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctRegresar.TabIndex = 24
         Me.pctRegresar.TabStop = False
         '
@@ -315,8 +316,8 @@ Partial Class frmClientes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(861, 747)
-        Me.Controls.Add(Me.lblRegresar)
         Me.Controls.Add(Me.pctRegresar)
+        Me.Controls.Add(Me.lblRegresar)
         Me.Controls.Add(Me.lblTitulo)
         Me.Controls.Add(Me.txtTotal)
         Me.Controls.Add(Me.lblTotal)
@@ -344,8 +345,8 @@ Partial Class frmClientes
         Me.Name = "frmClientes"
         Me.Text = "Clientes"
         CType(Me.dgvPedidos, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pctRegresar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BindingSourceClientes, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctRegresar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -381,6 +382,6 @@ Partial Class frmClientes
     Friend WithEvents lblPedid As Label
     Friend WithEvents txtTotal As TextBox
     Friend WithEvents lblRegresar As Label
-    Friend WithEvents pctRegresar As PictureBox
     Friend WithEvents BindingSourceClientes As BindingSource
+    Friend WithEvents pctRegresar As PictureBox
 End Class
