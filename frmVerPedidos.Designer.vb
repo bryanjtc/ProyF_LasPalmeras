@@ -44,6 +44,7 @@ Partial Class frmVerPedidos
         Me.lbltTitulo = New System.Windows.Forms.Label()
         Me.PedidoTableAdapter = New ProyF_LasPalmeras.lasPalmerasDataSetTableAdapters.PedidoTableAdapter()
         Me.RestauranteTableAdapter = New ProyF_LasPalmeras.lasPalmerasDataSetTableAdapters.RestauranteTableAdapter()
+        Me.txtNumPedido = New System.Windows.Forms.TextBox()
         CType(Me.dgvPedidos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PedidoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LasPalmerasDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -244,12 +245,21 @@ Partial Class frmVerPedidos
         '
         Me.RestauranteTableAdapter.ClearBeforeFill = True
         '
+        'txtNumPedido
+        '
+        Me.txtNumPedido.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PedidoBindingSource, "num_pedido", True))
+        Me.txtNumPedido.Location = New System.Drawing.Point(802, 429)
+        Me.txtNumPedido.Name = "txtNumPedido"
+        Me.txtNumPedido.Size = New System.Drawing.Size(100, 20)
+        Me.txtNumPedido.TabIndex = 27
+        '
         'frmVerPedidos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1120, 470)
+        Me.Controls.Add(Me.txtNumPedido)
         Me.Controls.Add(Me.lblRegresar)
         Me.Controls.Add(Me.pctRegresar)
         Me.Controls.Add(Me.lbltTitulo)
@@ -293,4 +303,5 @@ Partial Class frmVerPedidos
     Friend WithEvents ValortotalDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents RestauranteBindingSource As BindingSource
     Friend WithEvents RestauranteTableAdapter As lasPalmerasDataSetTableAdapters.RestauranteTableAdapter
+    Friend WithEvents txtNumPedido As TextBox
 End Class
