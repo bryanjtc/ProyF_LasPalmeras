@@ -49,9 +49,9 @@ Partial Class frmInfoCurso
         Me.btnVerProyecto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVerProyecto.Font = New System.Drawing.Font("Segoe UI", 16.2!)
         Me.btnVerProyecto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnVerProyecto.Location = New System.Drawing.Point(25, 651)
+        Me.btnVerProyecto.Location = New System.Drawing.Point(30, 835)
         Me.btnVerProyecto.Name = "btnVerProyecto"
-        Me.btnVerProyecto.Size = New System.Drawing.Size(225, 76)
+        Me.btnVerProyecto.Size = New System.Drawing.Size(225, 94)
         Me.btnVerProyecto.TabIndex = 1
         Me.btnVerProyecto.Text = "Proyecto Las Palmeras"
         Me.btnVerProyecto.UseVisualStyleBackColor = False
@@ -66,9 +66,9 @@ Partial Class frmInfoCurso
         Me.btnVerInfoApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVerInfoApp.Font = New System.Drawing.Font("Segoe UI", 16.2!)
         Me.btnVerInfoApp.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnVerInfoApp.Location = New System.Drawing.Point(276, 651)
+        Me.btnVerInfoApp.Location = New System.Drawing.Point(276, 835)
         Me.btnVerInfoApp.Name = "btnVerInfoApp"
-        Me.btnVerInfoApp.Size = New System.Drawing.Size(225, 76)
+        Me.btnVerInfoApp.Size = New System.Drawing.Size(225, 94)
         Me.btnVerInfoApp.TabIndex = 2
         Me.btnVerInfoApp.Text = "Informacion de la aplicacion"
         Me.btnVerInfoApp.UseVisualStyleBackColor = False
@@ -78,7 +78,7 @@ Partial Class frmInfoCurso
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(535, 738)
+        Me.ClientSize = New System.Drawing.Size(535, 982)
         Me.Controls.Add(Me.btnVerInfoApp)
         Me.Controls.Add(Me.btnVerProyecto)
         Me.Controls.Add(Me.lblInfoCurso)

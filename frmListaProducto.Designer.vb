@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmListaProducto
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmListaProducto
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmListaProducto))
         Me.lblListaProducto = New System.Windows.Forms.Label()
@@ -69,9 +69,9 @@ Partial Class frmListaProducto
         Me.btnSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSeleccionar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnSeleccionar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnSeleccionar.Location = New System.Drawing.Point(583, 410)
+        Me.btnSeleccionar.Location = New System.Drawing.Point(583, 401)
         Me.btnSeleccionar.Name = "btnSeleccionar"
-        Me.btnSeleccionar.Size = New System.Drawing.Size(207, 39)
+        Me.btnSeleccionar.Size = New System.Drawing.Size(207, 48)
         Me.btnSeleccionar.TabIndex = 3
         Me.btnSeleccionar.Text = "Agregar al Pedido"
         Me.btnSeleccionar.UseVisualStyleBackColor = True
@@ -80,7 +80,7 @@ Partial Class frmListaProducto
         '
         Me.lblCantidad.AutoSize = True
         Me.lblCantidad.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.lblCantidad.Location = New System.Drawing.Point(415, 418)
+        Me.lblCantidad.Location = New System.Drawing.Point(415, 415)
         Me.lblCantidad.Name = "lblCantidad"
         Me.lblCantidad.Size = New System.Drawing.Size(92, 28)
         Me.lblCantidad.TabIndex = 4
@@ -107,10 +107,11 @@ Partial Class frmListaProducto
         '
         'pctRegresar
         '
-        Me.pctRegresar.Location = New System.Drawing.Point(0, 0)
-        Me.pctRegresar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pctRegresar.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.back
+        Me.pctRegresar.Location = New System.Drawing.Point(48, 12)
         Me.pctRegresar.Name = "pctRegresar"
-        Me.pctRegresar.Size = New System.Drawing.Size(100, 40)
+        Me.pctRegresar.Size = New System.Drawing.Size(50, 50)
+        Me.pctRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctRegresar.TabIndex = 26
         Me.pctRegresar.TabStop = False
         '
@@ -120,8 +121,8 @@ Partial Class frmListaProducto
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(144, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(239, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(802, 459)
-        Me.Controls.Add(Me.lblRegresar)
         Me.Controls.Add(Me.pctRegresar)
+        Me.Controls.Add(Me.lblRegresar)
         Me.Controls.Add(Me.numCantidad)
         Me.Controls.Add(Me.lblCantidad)
         Me.Controls.Add(Me.btnSeleccionar)

@@ -29,6 +29,16 @@ Partial Class frmMenu
         Me.btnVerPedidos = New System.Windows.Forms.Button()
         Me.lblLabelPrincipal = New System.Windows.Forms.Label()
         Me.lblSalir = New System.Windows.Forms.Label()
+        Me.pctPedidos = New System.Windows.Forms.PictureBox()
+        Me.pctNewPedido = New System.Windows.Forms.PictureBox()
+        Me.pctAdmin = New System.Windows.Forms.PictureBox()
+        Me.pctLogo = New System.Windows.Forms.PictureBox()
+        Me.pctSalir = New System.Windows.Forms.PictureBox()
+        CType(Me.pctPedidos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctNewPedido, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctAdmin, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctLogo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctSalir, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblTitulo
@@ -109,11 +119,64 @@ Partial Class frmMenu
         '
         Me.lblSalir.AutoSize = True
         Me.lblSalir.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.lblSalir.Location = New System.Drawing.Point(812, 342)
+        Me.lblSalir.Location = New System.Drawing.Point(810, 335)
         Me.lblSalir.Name = "lblSalir"
         Me.lblSalir.Size = New System.Drawing.Size(62, 32)
         Me.lblSalir.TabIndex = 10
         Me.lblSalir.Text = "Salir"
+        '
+        'pctPedidos
+        '
+        Me.pctPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.pctPedidos.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.to_do_list
+        Me.pctPedidos.Location = New System.Drawing.Point(646, 261)
+        Me.pctPedidos.Name = "pctPedidos"
+        Me.pctPedidos.Size = New System.Drawing.Size(40, 40)
+        Me.pctPedidos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctPedidos.TabIndex = 23
+        Me.pctPedidos.TabStop = False
+        '
+        'pctNewPedido
+        '
+        Me.pctNewPedido.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.pctNewPedido.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.order
+        Me.pctNewPedido.Location = New System.Drawing.Point(348, 256)
+        Me.pctNewPedido.Name = "pctNewPedido"
+        Me.pctNewPedido.Size = New System.Drawing.Size(45, 45)
+        Me.pctNewPedido.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctNewPedido.TabIndex = 22
+        Me.pctNewPedido.TabStop = False
+        '
+        'pctAdmin
+        '
+        Me.pctAdmin.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.pctAdmin.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.budget
+        Me.pctAdmin.Location = New System.Drawing.Point(41, 261)
+        Me.pctAdmin.Name = "pctAdmin"
+        Me.pctAdmin.Size = New System.Drawing.Size(40, 40)
+        Me.pctAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctAdmin.TabIndex = 21
+        Me.pctAdmin.TabStop = False
+        '
+        'pctLogo
+        '
+        Me.pctLogo.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.palm_tree
+        Me.pctLogo.Location = New System.Drawing.Point(41, 56)
+        Me.pctLogo.Name = "pctLogo"
+        Me.pctLogo.Size = New System.Drawing.Size(70, 70)
+        Me.pctLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctLogo.TabIndex = 20
+        Me.pctLogo.TabStop = False
+        '
+        'pctSalir
+        '
+        Me.pctSalir.Image = Global.ProyF_LasPalmeras.My.Resources.Resources._exit
+        Me.pctSalir.Location = New System.Drawing.Point(878, 337)
+        Me.pctSalir.Name = "pctSalir"
+        Me.pctSalir.Size = New System.Drawing.Size(30, 30)
+        Me.pctSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctSalir.TabIndex = 19
+        Me.pctSalir.TabStop = False
         '
         'frmMenu
         '
@@ -122,6 +185,11 @@ Partial Class frmMenu
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(921, 379)
+        Me.Controls.Add(Me.pctPedidos)
+        Me.Controls.Add(Me.pctNewPedido)
+        Me.Controls.Add(Me.pctAdmin)
+        Me.Controls.Add(Me.pctLogo)
+        Me.Controls.Add(Me.pctSalir)
         Me.Controls.Add(Me.lblSalir)
         Me.Controls.Add(Me.btnVerPedidos)
         Me.Controls.Add(Me.lblLabelPrincipal)
@@ -133,6 +201,11 @@ Partial Class frmMenu
         Me.Name = "frmMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu"
+        CType(Me.pctPedidos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctNewPedido, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctAdmin, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctLogo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctSalir, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -147,4 +220,9 @@ Partial Class frmMenu
     Friend WithEvents btnVerPedidos As Button
     Friend WithEvents lblLabelPrincipal As Label
     Friend WithEvents lblSalir As Label
+    Friend WithEvents pctSalir As PictureBox
+    Friend WithEvents pctLogo As PictureBox
+    Friend WithEvents pctAdmin As PictureBox
+    Friend WithEvents pctNewPedido As PictureBox
+    Friend WithEvents pctPedidos As PictureBox
 End Class
