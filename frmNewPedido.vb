@@ -91,4 +91,8 @@ Public Class frmNewPedido
         txtTotal.Text = (subTotal + Convert.ToDouble(costoEntrega)).ToString()
     End Sub
 
+    Private Sub btnAgregarCliente_Click(sender As Object, e As EventArgs) Handles btnAgregarCliente.Click
+        frmAddCliente.Show()
+        Me.Hide()
+    End Sub
 End Class

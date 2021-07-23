@@ -23,4 +23,7 @@
         Me.Hide()
         frmNewPedido.Show()
     End Sub
+
+
+
 End Class

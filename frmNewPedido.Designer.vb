@@ -93,9 +93,10 @@ Partial Class frmNewPedido
         '
         Me.lblClienteID.AutoSize = True
         Me.lblClienteID.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.lblClienteID.Location = New System.Drawing.Point(28, 377)
+        Me.lblClienteID.Location = New System.Drawing.Point(21, 306)
+        Me.lblClienteID.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblClienteID.Name = "lblClienteID"
-        Me.lblClienteID.Size = New System.Drawing.Size(127, 32)
+        Me.lblClienteID.Size = New System.Drawing.Size(98, 25)
         Me.lblClienteID.TabIndex = 1
         Me.lblClienteID.Text = "ID Cliente"
         '
@@ -106,10 +107,10 @@ Partial Class frmNewPedido
         Me.cboClienteID.DisplayMember = "cedula"
         Me.cboClienteID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboClienteID.FormattingEnabled = True
-        Me.cboClienteID.Location = New System.Drawing.Point(153, 379)
-        Me.cboClienteID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cboClienteID.Location = New System.Drawing.Point(115, 308)
+        Me.cboClienteID.Margin = New System.Windows.Forms.Padding(2)
         Me.cboClienteID.Name = "cboClienteID"
-        Me.cboClienteID.Size = New System.Drawing.Size(120, 24)
+        Me.cboClienteID.Size = New System.Drawing.Size(91, 21)
         Me.cboClienteID.TabIndex = 2
         Me.cboClienteID.ValueMember = "cedula"
         '
@@ -138,10 +139,10 @@ Partial Class frmNewPedido
         Me.btnAgregarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAgregarCliente.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnAgregarCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnAgregarCliente.Location = New System.Drawing.Point(328, 363)
-        Me.btnAgregarCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnAgregarCliente.Location = New System.Drawing.Point(237, 297)
+        Me.btnAgregarCliente.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAgregarCliente.Name = "btnAgregarCliente"
-        Me.btnAgregarCliente.Size = New System.Drawing.Size(177, 46)
+        Me.btnAgregarCliente.Size = New System.Drawing.Size(133, 37)
         Me.btnAgregarCliente.TabIndex = 3
         Me.btnAgregarCliente.Text = "Agregar Cliente"
         Me.btnAgregarCliente.UseVisualStyleBackColor = True
@@ -155,9 +156,10 @@ Partial Class frmNewPedido
         '
         Me.lblRestaurante.AutoSize = True
         Me.lblRestaurante.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.lblRestaurante.Location = New System.Drawing.Point(28, 430)
+        Me.lblRestaurante.Location = New System.Drawing.Point(21, 349)
+        Me.lblRestaurante.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblRestaurante.Name = "lblRestaurante"
-        Me.lblRestaurante.Size = New System.Drawing.Size(151, 32)
+        Me.lblRestaurante.Size = New System.Drawing.Size(118, 25)
         Me.lblRestaurante.TabIndex = 5
         Me.lblRestaurante.Text = "Restaurante"
         '
@@ -168,10 +170,10 @@ Partial Class frmNewPedido
         Me.cboRestaurantes.DisplayMember = "nombre"
         Me.cboRestaurantes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboRestaurantes.FormattingEnabled = True
-        Me.cboRestaurantes.Location = New System.Drawing.Point(191, 430)
-        Me.cboRestaurantes.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cboRestaurantes.Location = New System.Drawing.Point(143, 349)
+        Me.cboRestaurantes.Margin = New System.Windows.Forms.Padding(2)
         Me.cboRestaurantes.Name = "cboRestaurantes"
-        Me.cboRestaurantes.Size = New System.Drawing.Size(223, 24)
+        Me.cboRestaurantes.Size = New System.Drawing.Size(168, 21)
         Me.cboRestaurantes.TabIndex = 6
         Me.cboRestaurantes.ValueMember = "id_sucursal"
         '
@@ -184,9 +186,10 @@ Partial Class frmNewPedido
         '
         Me.lblMotorizado.AutoSize = True
         Me.lblMotorizado.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.lblMotorizado.Location = New System.Drawing.Point(521, 421)
+        Me.lblMotorizado.Location = New System.Drawing.Point(391, 342)
+        Me.lblMotorizado.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblMotorizado.Name = "lblMotorizado"
-        Me.lblMotorizado.Size = New System.Drawing.Size(149, 32)
+        Me.lblMotorizado.Size = New System.Drawing.Size(117, 25)
         Me.lblMotorizado.TabIndex = 7
         Me.lblMotorizado.Text = "Motorizado"
         '
@@ -197,10 +200,10 @@ Partial Class frmNewPedido
         Me.cboMotorizado.DisplayMember = "nombre"
         Me.cboMotorizado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboMotorizado.FormattingEnabled = True
-        Me.cboMotorizado.Location = New System.Drawing.Point(676, 430)
-        Me.cboMotorizado.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cboMotorizado.Location = New System.Drawing.Point(507, 349)
+        Me.cboMotorizado.Margin = New System.Windows.Forms.Padding(2)
         Me.cboMotorizado.Name = "cboMotorizado"
-        Me.cboMotorizado.Size = New System.Drawing.Size(219, 24)
+        Me.cboMotorizado.Size = New System.Drawing.Size(165, 21)
         Me.cboMotorizado.TabIndex = 8
         Me.cboMotorizado.ValueMember = "id_motorizado"
         '
@@ -213,38 +216,40 @@ Partial Class frmNewPedido
         '
         Me.lblHoraEntrega.AutoSize = True
         Me.lblHoraEntrega.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.lblHoraEntrega.Location = New System.Drawing.Point(28, 481)
+        Me.lblHoraEntrega.Location = New System.Drawing.Point(21, 391)
+        Me.lblHoraEntrega.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblHoraEntrega.Name = "lblHoraEntrega"
-        Me.lblHoraEntrega.Size = New System.Drawing.Size(201, 32)
+        Me.lblHoraEntrega.Size = New System.Drawing.Size(158, 25)
         Me.lblHoraEntrega.TabIndex = 9
         Me.lblHoraEntrega.Text = "Hora de entrega"
         '
         'txtHoraEntrega
         '
         Me.txtHoraEntrega.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PedidoBindingSource, "hora_entrega", True))
-        Me.txtHoraEntrega.Location = New System.Drawing.Point(235, 490)
-        Me.txtHoraEntrega.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtHoraEntrega.Location = New System.Drawing.Point(176, 398)
+        Me.txtHoraEntrega.Margin = New System.Windows.Forms.Padding(2)
         Me.txtHoraEntrega.Name = "txtHoraEntrega"
-        Me.txtHoraEntrega.Size = New System.Drawing.Size(162, 22)
+        Me.txtHoraEntrega.Size = New System.Drawing.Size(122, 20)
         Me.txtHoraEntrega.TabIndex = 10
         '
         'lblCostoDeEntrega
         '
         Me.lblCostoDeEntrega.AutoSize = True
         Me.lblCostoDeEntrega.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.lblCostoDeEntrega.Location = New System.Drawing.Point(460, 476)
+        Me.lblCostoDeEntrega.Location = New System.Drawing.Point(345, 387)
+        Me.lblCostoDeEntrega.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblCostoDeEntrega.Name = "lblCostoDeEntrega"
-        Me.lblCostoDeEntrega.Size = New System.Drawing.Size(210, 32)
+        Me.lblCostoDeEntrega.Size = New System.Drawing.Size(164, 25)
         Me.lblCostoDeEntrega.TabIndex = 11
         Me.lblCostoDeEntrega.Text = "Costo de Entrega"
         '
         'txtCostoDeEntrega
         '
         Me.txtCostoDeEntrega.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PedidoBindingSource, "costo_entrega", True))
-        Me.txtCostoDeEntrega.Location = New System.Drawing.Point(676, 485)
-        Me.txtCostoDeEntrega.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtCostoDeEntrega.Location = New System.Drawing.Point(507, 394)
+        Me.txtCostoDeEntrega.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCostoDeEntrega.Name = "txtCostoDeEntrega"
-        Me.txtCostoDeEntrega.Size = New System.Drawing.Size(219, 22)
+        Me.txtCostoDeEntrega.Size = New System.Drawing.Size(165, 20)
         Me.txtCostoDeEntrega.TabIndex = 12
         '
         'dgvInfoPedido
@@ -258,13 +263,13 @@ Partial Class frmNewPedido
         Me.dgvInfoPedido.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NumpedidoDataGridViewTextBoxColumn, Me.IdproductoDataGridViewTextBoxColumn, Me.CantidadDataGridViewTextBoxColumn})
         Me.dgvInfoPedido.DataSource = Me.PedidoProductoBindingSource
         Me.dgvInfoPedido.GridColor = System.Drawing.Color.FromArgb(CType(CType(144, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(239, Byte), Integer))
-        Me.dgvInfoPedido.Location = New System.Drawing.Point(34, 242)
-        Me.dgvInfoPedido.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dgvInfoPedido.Location = New System.Drawing.Point(26, 197)
+        Me.dgvInfoPedido.Margin = New System.Windows.Forms.Padding(2)
         Me.dgvInfoPedido.Name = "dgvInfoPedido"
         Me.dgvInfoPedido.ReadOnly = True
         Me.dgvInfoPedido.RowHeadersWidth = 51
         Me.dgvInfoPedido.RowTemplate.Height = 25
-        Me.dgvInfoPedido.Size = New System.Drawing.Size(863, 91)
+        Me.dgvInfoPedido.Size = New System.Drawing.Size(647, 74)
         Me.dgvInfoPedido.TabIndex = 13
         '
         'NumpedidoDataGridViewTextBoxColumn
@@ -300,9 +305,10 @@ Partial Class frmNewPedido
         '
         Me.lblPedido.AutoSize = True
         Me.lblPedido.Font = New System.Drawing.Font("Segoe UI", 14.25!)
-        Me.lblPedido.Location = New System.Drawing.Point(-605, -134)
+        Me.lblPedido.Location = New System.Drawing.Point(-454, -109)
+        Me.lblPedido.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPedido.Name = "lblPedido"
-        Me.lblPedido.Size = New System.Drawing.Size(88, 32)
+        Me.lblPedido.Size = New System.Drawing.Size(70, 25)
         Me.lblPedido.TabIndex = 14
         Me.lblPedido.Text = "Pedido"
         '
@@ -311,9 +317,10 @@ Partial Class frmNewPedido
         Me.lblPedidoAct.AutoSize = True
         Me.lblPedidoAct.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold)
         Me.lblPedidoAct.ForeColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.lblPedidoAct.Location = New System.Drawing.Point(25, 133)
+        Me.lblPedidoAct.Location = New System.Drawing.Point(19, 108)
+        Me.lblPedidoAct.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPedidoAct.Name = "lblPedidoAct"
-        Me.lblPedidoAct.Size = New System.Drawing.Size(107, 38)
+        Me.lblPedidoAct.Size = New System.Drawing.Size(85, 30)
         Me.lblPedidoAct.TabIndex = 15
         Me.lblPedidoAct.Text = "Pedido"
         '
@@ -327,10 +334,10 @@ Partial Class frmNewPedido
         Me.btnAddProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAddProducto.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnAddProducto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnAddProducto.Location = New System.Drawing.Point(678, 129)
-        Me.btnAddProducto.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnAddProducto.Location = New System.Drawing.Point(508, 105)
+        Me.btnAddProducto.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAddProducto.Name = "btnAddProducto"
-        Me.btnAddProducto.Size = New System.Drawing.Size(218, 53)
+        Me.btnAddProducto.Size = New System.Drawing.Size(164, 43)
         Me.btnAddProducto.TabIndex = 16
         Me.btnAddProducto.Text = "Agregar al pedido"
         Me.btnAddProducto.UseVisualStyleBackColor = False
@@ -345,10 +352,10 @@ Partial Class frmNewPedido
         Me.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnConfirmar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnConfirmar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnConfirmar.Location = New System.Drawing.Point(750, 537)
-        Me.btnConfirmar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnConfirmar.Location = New System.Drawing.Point(562, 436)
+        Me.btnConfirmar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnConfirmar.Name = "btnConfirmar"
-        Me.btnConfirmar.Size = New System.Drawing.Size(147, 51)
+        Me.btnConfirmar.Size = New System.Drawing.Size(110, 41)
         Me.btnConfirmar.TabIndex = 18
         Me.btnConfirmar.Text = "Confirmar"
         Me.btnConfirmar.UseVisualStyleBackColor = False
@@ -357,27 +364,29 @@ Partial Class frmNewPedido
         '
         Me.lblTotal.AutoSize = True
         Me.lblTotal.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.lblTotal.Location = New System.Drawing.Point(554, 546)
+        Me.lblTotal.Location = New System.Drawing.Point(416, 444)
+        Me.lblTotal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(71, 32)
+        Me.lblTotal.Size = New System.Drawing.Size(55, 25)
         Me.lblTotal.TabIndex = 19
         Me.lblTotal.Text = "Total"
         '
         'txtTotal
         '
-        Me.txtTotal.Location = New System.Drawing.Point(631, 552)
-        Me.txtTotal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtTotal.Location = New System.Drawing.Point(473, 448)
+        Me.txtTotal.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTotal.Name = "txtTotal"
-        Me.txtTotal.Size = New System.Drawing.Size(113, 22)
+        Me.txtTotal.Size = New System.Drawing.Size(86, 20)
         Me.txtTotal.TabIndex = 20
         '
         'lblTitulo
         '
         Me.lblTitulo.AutoSize = True
         Me.lblTitulo.Font = New System.Drawing.Font("Segoe UI", 22.2!, System.Drawing.FontStyle.Bold)
-        Me.lblTitulo.Location = New System.Drawing.Point(371, 23)
+        Me.lblTitulo.Location = New System.Drawing.Point(278, 19)
+        Me.lblTitulo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(275, 51)
+        Me.lblTitulo.Size = New System.Drawing.Size(216, 41)
         Me.lblTitulo.TabIndex = 21
         Me.lblTitulo.Text = "Nuevo Pedido"
         '
@@ -385,19 +394,20 @@ Partial Class frmNewPedido
         '
         Me.lblRegresar.AutoSize = True
         Me.lblRegresar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.lblRegresar.Location = New System.Drawing.Point(19, 71)
+        Me.lblRegresar.Location = New System.Drawing.Point(14, 58)
+        Me.lblRegresar.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblRegresar.Name = "lblRegresar"
-        Me.lblRegresar.Size = New System.Drawing.Size(90, 28)
+        Me.lblRegresar.Size = New System.Drawing.Size(75, 21)
         Me.lblRegresar.TabIndex = 23
         Me.lblRegresar.Text = "Regresar"
         '
         'pctRegresar
         '
         Me.pctRegresar.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.back
-        Me.pctRegresar.Location = New System.Drawing.Point(36, 24)
-        Me.pctRegresar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pctRegresar.Location = New System.Drawing.Point(27, 20)
+        Me.pctRegresar.Margin = New System.Windows.Forms.Padding(2)
         Me.pctRegresar.Name = "pctRegresar"
-        Me.pctRegresar.Size = New System.Drawing.Size(51, 50)
+        Me.pctRegresar.Size = New System.Drawing.Size(38, 41)
         Me.pctRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctRegresar.TabIndex = 24
         Me.pctRegresar.TabStop = False
@@ -413,10 +423,10 @@ Partial Class frmNewPedido
         'txtNumPedido
         '
         Me.txtNumPedido.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PedidoBindingSource, "num_pedido", True))
-        Me.txtNumPedido.Location = New System.Drawing.Point(138, 147)
-        Me.txtNumPedido.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtNumPedido.Location = New System.Drawing.Point(104, 119)
+        Me.txtNumPedido.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNumPedido.Name = "txtNumPedido"
-        Me.txtNumPedido.Size = New System.Drawing.Size(177, 22)
+        Me.txtNumPedido.Size = New System.Drawing.Size(134, 20)
         Me.txtNumPedido.TabIndex = 25
         '
         'MotorizadoTableAdapter
@@ -442,12 +452,13 @@ Partial Class frmNewPedido
         Me.dgvPedido.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NumpedidoDataGridViewTextBoxColumn1, Me.IdsucursalDataGridViewTextBoxColumn, Me.IdmotorizadoDataGridViewTextBoxColumn, Me.CedulaDataGridViewTextBoxColumn, Me.HoraentregaDataGridViewTextBoxColumn, Me.CostoentregaDataGridViewTextBoxColumn, Me.ValortotalDataGridViewTextBoxColumn})
         Me.dgvPedido.DataSource = Me.PedidoBindingSource
         Me.dgvPedido.GridColor = System.Drawing.Color.FromArgb(CType(CType(144, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(239, Byte), Integer))
-        Me.dgvPedido.Location = New System.Drawing.Point(31, 629)
+        Me.dgvPedido.Location = New System.Drawing.Point(23, 511)
+        Me.dgvPedido.Margin = New System.Windows.Forms.Padding(2)
         Me.dgvPedido.Name = "dgvPedido"
         Me.dgvPedido.ReadOnly = True
         Me.dgvPedido.RowHeadersWidth = 51
         Me.dgvPedido.RowTemplate.Height = 24
-        Me.dgvPedido.Size = New System.Drawing.Size(864, 150)
+        Me.dgvPedido.Size = New System.Drawing.Size(648, 122)
         Me.dgvPedido.TabIndex = 26
         '
         'NumpedidoDataGridViewTextBoxColumn1
@@ -511,9 +522,10 @@ Partial Class frmNewPedido
         Me.lblProducto.AutoSize = True
         Me.lblProducto.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold)
         Me.lblProducto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.lblProducto.Location = New System.Drawing.Point(348, 133)
+        Me.lblProducto.Location = New System.Drawing.Point(261, 108)
+        Me.lblProducto.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblProducto.Name = "lblProducto"
-        Me.lblProducto.Size = New System.Drawing.Size(137, 38)
+        Me.lblProducto.Size = New System.Drawing.Size(109, 30)
         Me.lblProducto.TabIndex = 27
         Me.lblProducto.Text = "Producto"
         '
@@ -524,10 +536,10 @@ Partial Class frmNewPedido
         Me.cboProducto.DisplayMember = "nombre"
         Me.cboProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboProducto.FormattingEnabled = True
-        Me.cboProducto.Location = New System.Drawing.Point(491, 145)
-        Me.cboProducto.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cboProducto.Location = New System.Drawing.Point(368, 118)
+        Me.cboProducto.Margin = New System.Windows.Forms.Padding(2)
         Me.cboProducto.Name = "cboProducto"
-        Me.cboProducto.Size = New System.Drawing.Size(168, 24)
+        Me.cboProducto.Size = New System.Drawing.Size(127, 21)
         Me.cboProducto.TabIndex = 28
         Me.cboProducto.ValueMember = "id_producto"
         '
@@ -545,19 +557,20 @@ Partial Class frmNewPedido
         Me.lblCantidad.AutoSize = True
         Me.lblCantidad.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold)
         Me.lblCantidad.ForeColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.lblCantidad.Location = New System.Drawing.Point(351, 183)
+        Me.lblCantidad.Location = New System.Drawing.Point(263, 149)
+        Me.lblCantidad.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblCantidad.Name = "lblCantidad"
-        Me.lblCantidad.Size = New System.Drawing.Size(134, 38)
+        Me.lblCantidad.Size = New System.Drawing.Size(107, 30)
         Me.lblCantidad.TabIndex = 29
         Me.lblCantidad.Text = "Cantidad"
         '
         'txtCantidad
         '
         Me.txtCantidad.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PedidoProductoBindingSource, "cantidad", True))
-        Me.txtCantidad.Location = New System.Drawing.Point(491, 197)
-        Me.txtCantidad.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtCantidad.Location = New System.Drawing.Point(368, 160)
+        Me.txtCantidad.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(168, 22)
+        Me.txtCantidad.Size = New System.Drawing.Size(127, 20)
         Me.txtCantidad.TabIndex = 30
         '
         'btnGuardar
@@ -570,20 +583,20 @@ Partial Class frmNewPedido
         Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuardar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnGuardar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnGuardar.Location = New System.Drawing.Point(36, 537)
-        Me.btnGuardar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnGuardar.Location = New System.Drawing.Point(160, 436)
+        Me.btnGuardar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(147, 51)
+        Me.btnGuardar.Size = New System.Drawing.Size(110, 41)
         Me.btnGuardar.TabIndex = 31
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = False
         '
         'frmNewPedido
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(942, 791)
+        Me.ClientSize = New System.Drawing.Size(706, 643)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.txtCantidad)
         Me.Controls.Add(Me.lblCantidad)
@@ -614,7 +627,7 @@ Partial Class frmNewPedido
         Me.Controls.Add(Me.lblClienteID)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmNewPedido"
         Me.Text = "Nuevo Pedido"
         CType(Me.PedidoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
