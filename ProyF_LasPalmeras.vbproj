@@ -115,12 +115,6 @@
     <Compile Include="frmInfoCurso.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmListaProducto.Designer.vb">
-      <DependentUpon>frmListaProducto.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmListaProducto.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmMenu.Designer.vb">
       <DependentUpon>frmMenu.vb</DependentUpon>
     </Compile>
@@ -188,9 +182,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInfoCurso.resx">
       <DependentUpon>frmInfoCurso.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmListaProducto.resx">
-      <DependentUpon>frmListaProducto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.vb</DependentUpon>
