@@ -53,4 +53,42 @@ Public Class frmNewPedido
             MsgBox("No puede agregar el mismo producto mas de una vez")
         End Try
     End Sub
+
+    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
+        Dim numPedido As String = txtNumPedido.Text
+        Dim cedula As String = cboClienteID.SelectedValue
+        Dim sucursal As String = cboRestaurantes.SelectedValue
+        Dim horaEntrega As String = txtHoraEntrega.Text
+        Dim motorizado As String = cboMotorizado.SelectedValue
+        Dim costoEntrega As String = txtCostoDeEntrega.Text
+        Dim nameProduct As String
+        Dim cantidadProduct As Integer
+        Dim subTotal As Double = 0
+        connect.Open()
+        Using Com As New SqlCommand("Select * From Pedido_Producto where num_pedido= '" & numPedido & "'", connect)
+            Using RDR = Com.ExecuteReader()
+                If RDR.HasRows Then
+                    Do While RDR.Read
+                        nameProduct = RDR.Item("id_producto").ToString()
+                        cantidadProduct = Convert.ToInt32(RDR.Item("cantidad").ToString())
+                        Dim connectTemp As New SqlClient.SqlConnection("Data Source=herramientas.database.windows.net;Initial Catalog=lasPalmeras;Persist Security Info=True;User ID=bryan;Password=kpgA@F!obNqN6Grog2sP")
+                        connectTemp.Open()
+                        Using ComTemp As New SqlCommand("Select * From Producto where id_producto= '" & nameProduct & "'", connectTemp)
+                            Using RDRTemp = ComTemp.ExecuteReader()
+                                If RDRTemp.HasRows Then
+                                    Do While RDRTemp.Read
+                                        subTotal += Convert.ToDouble(RDRTemp.Item("precio").ToString()) * cantidadProduct
+                                    Loop
+                                End If
+                            End Using
+                        End Using
+                        connectTemp.Close()
+                    Loop
+                End If
+            End Using
+        End Using
+        connect.Close()
+        txtTotal.Text = (subTotal + Convert.ToDouble(costoEntrega)).ToString()
+    End Sub
+
 End Class

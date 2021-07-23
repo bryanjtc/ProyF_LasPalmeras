@@ -24,13 +24,11 @@ Partial Class frmNewPedido
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmNewPedido))
-        Me.lblNombreCliente = New System.Windows.Forms.Label()
         Me.lblClienteID = New System.Windows.Forms.Label()
         Me.cboClienteID = New System.Windows.Forms.ComboBox()
         Me.PedidoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LasPalmerasDataSet = New ProyF_LasPalmeras.lasPalmerasDataSet()
         Me.btnAgregarCliente = New System.Windows.Forms.Button()
-        Me.txtNombreCliente = New System.Windows.Forms.TextBox()
         Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.lblRestaurante = New System.Windows.Forms.Label()
         Me.cboRestaurantes = New System.Windows.Forms.ComboBox()
@@ -77,6 +75,8 @@ Partial Class frmNewPedido
         Me.ProductoTableAdapter = New ProyF_LasPalmeras.lasPalmerasDataSetTableAdapters.ProductoTableAdapter()
         Me.lblCantidad = New System.Windows.Forms.Label()
         Me.txtCantidad = New System.Windows.Forms.TextBox()
+        Me.ClienteBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.btnGuardar = New System.Windows.Forms.Button()
         CType(Me.PedidoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LasPalmerasDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,17 +87,8 @@ Partial Class frmNewPedido
         CType(Me.pctRegresar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvPedido, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ClienteBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'lblNombreCliente
-        '
-        Me.lblNombreCliente.AutoSize = True
-        Me.lblNombreCliente.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.lblNombreCliente.Location = New System.Drawing.Point(477, 377)
-        Me.lblNombreCliente.Name = "lblNombreCliente"
-        Me.lblNombreCliente.Size = New System.Drawing.Size(195, 32)
-        Me.lblNombreCliente.TabIndex = 0
-        Me.lblNombreCliente.Text = "Nombre Cliente"
         '
         'lblClienteID
         '
@@ -112,7 +103,7 @@ Partial Class frmNewPedido
         'cboClienteID
         '
         Me.cboClienteID.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.PedidoBindingSource, "cedula", True))
-        Me.cboClienteID.DataSource = Me.PedidoBindingSource
+        Me.cboClienteID.DataSource = Me.ClienteBindingSource1
         Me.cboClienteID.DisplayMember = "cedula"
         Me.cboClienteID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboClienteID.FormattingEnabled = True
@@ -143,24 +134,13 @@ Partial Class frmNewPedido
         Me.btnAgregarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAgregarCliente.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnAgregarCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnAgregarCliente.Location = New System.Drawing.Point(279, 363)
+        Me.btnAgregarCliente.Location = New System.Drawing.Point(328, 363)
         Me.btnAgregarCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnAgregarCliente.Name = "btnAgregarCliente"
         Me.btnAgregarCliente.Size = New System.Drawing.Size(177, 46)
         Me.btnAgregarCliente.TabIndex = 3
         Me.btnAgregarCliente.Text = "Agregar Cliente"
         Me.btnAgregarCliente.UseVisualStyleBackColor = True
-        '
-        'txtNombreCliente
-        '
-        Me.txtNombreCliente.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtNombreCliente.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "nombre", True))
-        Me.txtNombreCliente.Location = New System.Drawing.Point(678, 377)
-        Me.txtNombreCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtNombreCliente.Name = "txtNombreCliente"
-        Me.txtNombreCliente.ReadOnly = True
-        Me.txtNombreCliente.Size = New System.Drawing.Size(219, 22)
-        Me.txtNombreCliente.TabIndex = 4
         '
         'ClienteBindingSource
         '
@@ -179,7 +159,7 @@ Partial Class frmNewPedido
         '
         'cboRestaurantes
         '
-        Me.cboRestaurantes.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.RestauranteBindingSource, "id_sucursal", True))
+        Me.cboRestaurantes.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.PedidoBindingSource, "id_sucursal", True))
         Me.cboRestaurantes.DataSource = Me.RestauranteBindingSource
         Me.cboRestaurantes.DisplayMember = "nombre"
         Me.cboRestaurantes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -200,7 +180,7 @@ Partial Class frmNewPedido
         '
         Me.lblMotorizado.AutoSize = True
         Me.lblMotorizado.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.lblMotorizado.Location = New System.Drawing.Point(523, 429)
+        Me.lblMotorizado.Location = New System.Drawing.Point(521, 421)
         Me.lblMotorizado.Name = "lblMotorizado"
         Me.lblMotorizado.Size = New System.Drawing.Size(149, 32)
         Me.lblMotorizado.TabIndex = 7
@@ -208,12 +188,12 @@ Partial Class frmNewPedido
         '
         'cboMotorizado
         '
-        Me.cboMotorizado.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.MotorizadoBindingSource, "id_motorizado", True))
+        Me.cboMotorizado.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.PedidoBindingSource, "id_motorizado", True))
         Me.cboMotorizado.DataSource = Me.MotorizadoBindingSource
         Me.cboMotorizado.DisplayMember = "nombre"
         Me.cboMotorizado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboMotorizado.FormattingEnabled = True
-        Me.cboMotorizado.Location = New System.Drawing.Point(678, 438)
+        Me.cboMotorizado.Location = New System.Drawing.Point(676, 430)
         Me.cboMotorizado.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cboMotorizado.Name = "cboMotorizado"
         Me.cboMotorizado.Size = New System.Drawing.Size(219, 24)
@@ -248,7 +228,7 @@ Partial Class frmNewPedido
         '
         Me.lblCostoDeEntrega.AutoSize = True
         Me.lblCostoDeEntrega.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.lblCostoDeEntrega.Location = New System.Drawing.Point(462, 484)
+        Me.lblCostoDeEntrega.Location = New System.Drawing.Point(460, 476)
         Me.lblCostoDeEntrega.Name = "lblCostoDeEntrega"
         Me.lblCostoDeEntrega.Size = New System.Drawing.Size(210, 32)
         Me.lblCostoDeEntrega.TabIndex = 11
@@ -257,7 +237,7 @@ Partial Class frmNewPedido
         'txtCostoDeEntrega
         '
         Me.txtCostoDeEntrega.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PedidoBindingSource, "costo_entrega", True))
-        Me.txtCostoDeEntrega.Location = New System.Drawing.Point(678, 493)
+        Me.txtCostoDeEntrega.Location = New System.Drawing.Point(676, 485)
         Me.txtCostoDeEntrega.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtCostoDeEntrega.Name = "txtCostoDeEntrega"
         Me.txtCostoDeEntrega.Size = New System.Drawing.Size(219, 22)
@@ -594,12 +574,36 @@ Partial Class frmNewPedido
         Me.txtCantidad.Size = New System.Drawing.Size(168, 22)
         Me.txtCantidad.TabIndex = 30
         '
+        'ClienteBindingSource1
+        '
+        Me.ClienteBindingSource1.DataMember = "Cliente"
+        Me.ClienteBindingSource1.DataSource = Me.LasPalmerasDataSet
+        '
+        'btnGuardar
+        '
+        Me.btnGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.btnGuardar.FlatAppearance.BorderSize = 4
+        Me.btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGuardar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnGuardar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnGuardar.Location = New System.Drawing.Point(214, 537)
+        Me.btnGuardar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(147, 51)
+        Me.btnGuardar.TabIndex = 31
+        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.UseVisualStyleBackColor = False
+        '
         'frmNewPedido
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(942, 791)
+        Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.txtCantidad)
         Me.Controls.Add(Me.lblCantidad)
         Me.Controls.Add(Me.cboProducto)
@@ -625,11 +629,9 @@ Partial Class frmNewPedido
         Me.Controls.Add(Me.lblMotorizado)
         Me.Controls.Add(Me.cboRestaurantes)
         Me.Controls.Add(Me.lblRestaurante)
-        Me.Controls.Add(Me.txtNombreCliente)
         Me.Controls.Add(Me.btnAgregarCliente)
         Me.Controls.Add(Me.cboClienteID)
         Me.Controls.Add(Me.lblClienteID)
-        Me.Controls.Add(Me.lblNombreCliente)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -645,18 +647,16 @@ Partial Class frmNewPedido
         CType(Me.pctRegresar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvPedido, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ClienteBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lblNombreCliente As Label
     Friend WithEvents lblTitulo As Label
     Friend WithEvents lblClienteID As Label
     Friend WithEvents cboClienteID As ComboBox
     Friend WithEvents btnAgregarCliente As Button
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents txtNombreCliente As TextBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents lblRestaurante As Label
     Friend WithEvents cboRestaurantes As ComboBox
@@ -710,4 +710,6 @@ Partial Class frmNewPedido
     Friend WithEvents ProductoTableAdapter As lasPalmerasDataSetTableAdapters.ProductoTableAdapter
     Friend WithEvents lblCantidad As Label
     Friend WithEvents txtCantidad As TextBox
+    Friend WithEvents ClienteBindingSource1 As BindingSource
+    Friend WithEvents btnGuardar As Button
 End Class
