@@ -40,12 +40,13 @@ Partial Class frmVerClientes
         'dgvClientes
         '
         Me.dgvClientes.AutoGenerateColumns = False
+        Me.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvClientes.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CedulaDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.ApellidoDataGridViewTextBoxColumn, Me.TelefonoDataGridViewTextBoxColumn, Me.DireccionDataGridViewTextBoxColumn})
         Me.dgvClientes.DataSource = Me.ClienteBindingSource
         Me.dgvClientes.Location = New System.Drawing.Point(12, 12)
         Me.dgvClientes.Name = "dgvClientes"
-        Me.dgvClientes.Size = New System.Drawing.Size(543, 426)
+        Me.dgvClientes.Size = New System.Drawing.Size(832, 426)
         Me.dgvClientes.TabIndex = 0
         '
         'LasPalmerasDataSet
@@ -96,7 +97,7 @@ Partial Class frmVerClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(569, 450)
+        Me.ClientSize = New System.Drawing.Size(856, 450)
         Me.Controls.Add(Me.dgvClientes)
         Me.Name = "frmVerClientes"
         Me.Text = "frmVerClientes"
