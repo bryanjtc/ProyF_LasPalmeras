@@ -236,10 +236,6 @@ Partial Class frmMenu
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents bt As Button
-    Friend WithEvents btn As Button
-    Friend WithEvents b As Button
-    Friend WithEvents botona As Button
     Friend WithEvents lblTitulo As Label
     Friend WithEvents btnAdministracion As Button
     Friend WithEvents btnNuevoPedido As Button

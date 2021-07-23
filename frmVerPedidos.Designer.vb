@@ -61,6 +61,7 @@ Partial Class frmVerPedidos
         Me.dgvPedidos.GridColor = System.Drawing.Color.FromArgb(CType(CType(144, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(239, Byte), Integer))
         Me.dgvPedidos.Location = New System.Drawing.Point(33, 154)
         Me.dgvPedidos.Name = "dgvPedidos"
+        Me.dgvPedidos.ReadOnly = True
         Me.dgvPedidos.RowHeadersWidth = 51
         Me.dgvPedidos.RowTemplate.Height = 25
         Me.dgvPedidos.Size = New System.Drawing.Size(1362, 351)
@@ -72,6 +73,7 @@ Partial Class frmVerPedidos
         Me.NumpedidoDataGridViewTextBoxColumn.HeaderText = "num_pedido"
         Me.NumpedidoDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.NumpedidoDataGridViewTextBoxColumn.Name = "NumpedidoDataGridViewTextBoxColumn"
+        Me.NumpedidoDataGridViewTextBoxColumn.ReadOnly = True
         Me.NumpedidoDataGridViewTextBoxColumn.Width = 125
         '
         'IdsucursalDataGridViewTextBoxColumn
@@ -80,6 +82,7 @@ Partial Class frmVerPedidos
         Me.IdsucursalDataGridViewTextBoxColumn.HeaderText = "id_sucursal"
         Me.IdsucursalDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.IdsucursalDataGridViewTextBoxColumn.Name = "IdsucursalDataGridViewTextBoxColumn"
+        Me.IdsucursalDataGridViewTextBoxColumn.ReadOnly = True
         Me.IdsucursalDataGridViewTextBoxColumn.Width = 125
         '
         'IdmotorizadoDataGridViewTextBoxColumn
@@ -88,6 +91,7 @@ Partial Class frmVerPedidos
         Me.IdmotorizadoDataGridViewTextBoxColumn.HeaderText = "id_motorizado"
         Me.IdmotorizadoDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.IdmotorizadoDataGridViewTextBoxColumn.Name = "IdmotorizadoDataGridViewTextBoxColumn"
+        Me.IdmotorizadoDataGridViewTextBoxColumn.ReadOnly = True
         Me.IdmotorizadoDataGridViewTextBoxColumn.Width = 125
         '
         'CedulaDataGridViewTextBoxColumn
@@ -96,6 +100,7 @@ Partial Class frmVerPedidos
         Me.CedulaDataGridViewTextBoxColumn.HeaderText = "cedula"
         Me.CedulaDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.CedulaDataGridViewTextBoxColumn.Name = "CedulaDataGridViewTextBoxColumn"
+        Me.CedulaDataGridViewTextBoxColumn.ReadOnly = True
         Me.CedulaDataGridViewTextBoxColumn.Width = 125
         '
         'HoraentregaDataGridViewTextBoxColumn
@@ -104,6 +109,7 @@ Partial Class frmVerPedidos
         Me.HoraentregaDataGridViewTextBoxColumn.HeaderText = "hora_entrega"
         Me.HoraentregaDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.HoraentregaDataGridViewTextBoxColumn.Name = "HoraentregaDataGridViewTextBoxColumn"
+        Me.HoraentregaDataGridViewTextBoxColumn.ReadOnly = True
         Me.HoraentregaDataGridViewTextBoxColumn.Width = 125
         '
         'CostoentregaDataGridViewTextBoxColumn
@@ -112,6 +118,7 @@ Partial Class frmVerPedidos
         Me.CostoentregaDataGridViewTextBoxColumn.HeaderText = "costo_entrega"
         Me.CostoentregaDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.CostoentregaDataGridViewTextBoxColumn.Name = "CostoentregaDataGridViewTextBoxColumn"
+        Me.CostoentregaDataGridViewTextBoxColumn.ReadOnly = True
         Me.CostoentregaDataGridViewTextBoxColumn.Width = 125
         '
         'ValortotalDataGridViewTextBoxColumn
@@ -120,6 +127,7 @@ Partial Class frmVerPedidos
         Me.ValortotalDataGridViewTextBoxColumn.HeaderText = "valor_total"
         Me.ValortotalDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.ValortotalDataGridViewTextBoxColumn.Name = "ValortotalDataGridViewTextBoxColumn"
+        Me.ValortotalDataGridViewTextBoxColumn.ReadOnly = True
         Me.ValortotalDataGridViewTextBoxColumn.Width = 125
         '
         'PedidoBindingSource

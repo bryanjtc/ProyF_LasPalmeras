@@ -6,11 +6,8 @@
 
 
     Private Sub btnAdministracion_Click(sender As Object, e As EventArgs) Handles btnAdministracion.Click
-
-    End Sub
-
-    Private Sub frmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Me.Hide()
+        frmAdmin.Show()
     End Sub
 
     Private Sub pctRegresar_Click(sender As Object, e As EventArgs) Handles pctRegresar.Click
@@ -20,5 +17,10 @@
 
     Private Sub pctSalir_Click(sender As Object, e As EventArgs) Handles pctSalir.Click
         End
+    End Sub
+
+    Private Sub btnNuevoPedido_Click(sender As Object, e As EventArgs) Handles btnNuevoPedido.Click
+        Me.Hide()
+        frmNewPedido.Show()
     End Sub
 End Class

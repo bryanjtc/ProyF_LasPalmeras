@@ -91,10 +91,10 @@
     <Compile Include="frmAdminRestaurantes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmClientes.Designer.vb">
-      <DependentUpon>frmClientes.vb</DependentUpon>
+    <Compile Include="frmNewPedido.Designer.vb">
+      <DependentUpon>frmNewPedido.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmClientes.vb">
+    <Compile Include="frmNewPedido.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmInfoApp.Designer.vb">
@@ -165,8 +165,8 @@
     <EmbeddedResource Include="frmAdminRestaurantes.resx">
       <DependentUpon>frmAdminRestaurantes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmClientes.resx">
-      <DependentUpon>frmClientes.vb</DependentUpon>
+    <EmbeddedResource Include="frmNewPedido.resx">
+      <DependentUpon>frmNewPedido.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInfoApp.resx">
       <DependentUpon>frmInfoApp.vb</DependentUpon>
