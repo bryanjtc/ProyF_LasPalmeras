@@ -121,6 +121,12 @@
     <Compile Include="frmMenu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmVerDetalles.Designer.vb">
+      <DependentUpon>frmVerDetalles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerDetalles.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmVerPedidos.Designer.vb">
       <DependentUpon>frmVerPedidos.vb</DependentUpon>
     </Compile>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerDetalles.resx">
+      <DependentUpon>frmVerDetalles.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVerPedidos.resx">
       <DependentUpon>frmVerPedidos.vb</DependentUpon>

@@ -4161,7 +4161,7 @@ Namespace lasPalmerasDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.ProyF_LasPalmeras.My.MySettings.Default.LasPalmerasConnection
+            Me._connection.ConnectionString = Global.ProyF_LasPalmeras.My.MySettings.Default.lasPalmerasConnectionString
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -4563,7 +4563,7 @@ Namespace lasPalmerasDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.ProyF_LasPalmeras.My.MySettings.Default.LasPalmerasConnection
+            Me._connection.ConnectionString = Global.ProyF_LasPalmeras.My.MySettings.Default.lasPalmerasConnectionString
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -4952,7 +4952,7 @@ Namespace lasPalmerasDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.ProyF_LasPalmeras.My.MySettings.Default.LasPalmerasConnection
+            Me._connection.ConnectionString = Global.ProyF_LasPalmeras.My.MySettings.Default.lasPalmerasConnectionString
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -5381,7 +5381,7 @@ Namespace lasPalmerasDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.ProyF_LasPalmeras.My.MySettings.Default.LasPalmerasConnection
+            Me._connection.ConnectionString = Global.ProyF_LasPalmeras.My.MySettings.Default.lasPalmerasConnectionString
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -6089,7 +6089,7 @@ Namespace lasPalmerasDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.ProyF_LasPalmeras.My.MySettings.Default.LasPalmerasConnection
+            Me._connection.ConnectionString = Global.ProyF_LasPalmeras.My.MySettings.Default.lasPalmerasConnectionString
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -6443,7 +6443,7 @@ Namespace lasPalmerasDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.ProyF_LasPalmeras.My.MySettings.Default.LasPalmerasConnection
+            Me._connection.ConnectionString = Global.ProyF_LasPalmeras.My.MySettings.Default.lasPalmerasConnectionString
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -6781,7 +6781,7 @@ Namespace lasPalmerasDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.ProyF_LasPalmeras.My.MySettings.Default.LasPalmerasConnection
+            Me._connection.ConnectionString = Global.ProyF_LasPalmeras.My.MySettings.Default.lasPalmerasConnectionString
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
