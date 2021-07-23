@@ -1,28 +1,21 @@
 ﻿Imports System.ComponentModel
 Imports System.Data.SqlClient
 Public Class frmEditPedido
+    'Connexion sql a la base de datos de azure
     ReadOnly connect As New SqlClient.SqlConnection("Data Source=herramientas.database.windows.net;Initial Catalog=lasPalmeras;Persist Security Info=True;User ID=bryan;Password=kpgA@F!obNqN6Grog2sP")
-
+    'Ejecucion de query de sql
     Private Sub ExecuteQuery(Query As String)
         Dim command As New SqlCommand(Query, connect)
         connect.Open()
         command.ExecuteNonQuery()
         connect.Close()
     End Sub
-
-    Private Sub btnBorrar_Click(sender As Object, e As EventArgs) 
-
-    End Sub
-
-    Private Sub dgvPedidos_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvInfoPedido.CellContentClick
-
-    End Sub
-
+    'Regresar al formulario anterior
     Private Sub pctRegresar_Click(sender As Object, e As EventArgs) Handles pctRegresar.Click
         Me.Hide()
         frmMenu.Show()
     End Sub
-
+    'Cargar las configuraciones iniciales de los enlaces
     Private Sub frmNewPedido_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'LasPalmerasDataSet.Producto' table. You can move, or remove it, as needed.
         Me.ProductoTableAdapter.Fill(Me.LasPalmerasDataSet.Producto)
@@ -39,6 +32,7 @@ Public Class frmEditPedido
 
 
 
+    'Boton agregar un producto
     Private Sub btnAddProducto_Click(sender As Object, e As EventArgs) Handles btnAddProducto.Click
         Dim numPedido As String = txtNumPedido.Text
         Dim idProducto As String = cboProducto.SelectedValue
@@ -53,7 +47,7 @@ Public Class frmEditPedido
             MsgBox("No puede agregar el mismo producto mas de una vez")
         End Try
     End Sub
-
+    'Boton Guardar la informacion en la base de datos via SQL Query
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         Dim numPedido As String = txtNumPedido.Text
         Dim cedula As String = cboClienteID.SelectedValue
@@ -92,6 +86,7 @@ Public Class frmEditPedido
         frmAddCliente.actualizarTablas()
     End Sub
 
+    'Boton regresar al menu anterior
     Private Sub btnAgregarCliente_Click(sender As Object, e As EventArgs) Handles btnAgregarCliente.Click
         frmAddCliente.Show()
         Me.Hide()

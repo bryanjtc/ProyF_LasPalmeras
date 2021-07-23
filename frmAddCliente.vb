@@ -1,10 +1,12 @@
 ﻿Public Class frmAddCliente
+    'se define la conexion con el dataset LasPalmerasDataSet
     Private Sub frmAddCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'LasPalmerasDataSet.Cliente' table. You can move, or remove it, as needed.
         Me.ClienteTableAdapter.Fill(Me.LasPalmerasDataSet.Cliente)
 
     End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
+    'Boton de adicion de un cliente a la base de datos
+    Private Sub btnAgregar_click(sender As Object, e As EventArgs) Handles btnAgregar.Click
         Dim newrow As DataRow = LasPalmerasDataSet.Tables("Cliente").NewRow()
         newrow(0) = txtCedula.Text
         newrow(1) = txtNombre.Text
@@ -21,6 +23,7 @@
         txtDirec.Text = ""
     End Sub
 
+    'Funcion de actualizacion global de las tablas
     Public Sub actualizarTablas()
         frmEditPedido.ClienteBindingSource.EndEdit()
         frmEditPedido.PedidoBindingSource.EndEdit()
@@ -46,7 +49,7 @@
 
 
     End Sub
-
+    'Boton de retorno al menu anterior
     Private Sub pctRegresar_Click(sender As Object, e As EventArgs) Handles pctRegresar.Click
         actualizarTablas()
         Me.Hide()
