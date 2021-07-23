@@ -19,10 +19,6 @@
         MotorizadoBindingSource.RemoveCurrent()
     End Sub
 
-    Private Sub btnSalir_Click(sender As Object, e As EventArgs)
-        Me.Hide()
-        frmAdmin.Show()
-    End Sub
 
     Private Sub pctRegresar_Click(sender As Object, e As EventArgs) Handles pctRegresar.Click
         Me.Hide()
