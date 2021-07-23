@@ -79,6 +79,18 @@
     <Compile Include="frmAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmAdminProducto.Designer.vb">
+      <DependentUpon>frmAdminProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminRestaurantes.Designer.vb">
+      <DependentUpon>frmAdminRestaurantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminRestaurantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmClientes.Designer.vb">
       <DependentUpon>frmClientes.vb</DependentUpon>
     </Compile>
@@ -140,6 +152,12 @@
   <ItemGroup>
     <EmbeddedResource Include="frmAdmin.resx">
       <DependentUpon>frmAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminProducto.resx">
+      <DependentUpon>frmAdminProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminRestaurantes.resx">
+      <DependentUpon>frmAdminRestaurantes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmClientes.resx">
       <DependentUpon>frmClientes.vb</DependentUpon>
