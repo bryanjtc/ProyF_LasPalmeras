@@ -24,25 +24,25 @@ Partial Class frmAdminProducto
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.dgvProductos = New System.Windows.Forms.DataGridView()
+        Me.IdproductoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PrecioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LasPalmerasDataSet = New ProyF_LasPalmeras.lasPalmerasDataSet()
         Me.lblProductID = New System.Windows.Forms.Label()
         Me.lblNombreP = New System.Windows.Forms.Label()
         Me.lblPrecio = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtProductID = New System.Windows.Forms.TextBox()
+        Me.txtNombreProducto = New System.Windows.Forms.TextBox()
+        Me.txtPrecio = New System.Windows.Forms.TextBox()
         Me.btnAddNew = New System.Windows.Forms.Button()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnBorrar = New System.Windows.Forms.Button()
-        Me.LasPalmerasDataSet = New ProyF_LasPalmeras.lasPalmerasDataSet()
-        Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProductoTableAdapter = New ProyF_LasPalmeras.lasPalmerasDataSetTableAdapters.ProductoTableAdapter()
-        Me.IdproductoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PrecioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgvProductos, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LasPalmerasDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LasPalmerasDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgvProductos
@@ -55,6 +55,34 @@ Partial Class frmAdminProducto
         Me.dgvProductos.Name = "dgvProductos"
         Me.dgvProductos.Size = New System.Drawing.Size(351, 426)
         Me.dgvProductos.TabIndex = 0
+        '
+        'IdproductoDataGridViewTextBoxColumn
+        '
+        Me.IdproductoDataGridViewTextBoxColumn.DataPropertyName = "id_producto"
+        Me.IdproductoDataGridViewTextBoxColumn.HeaderText = "id_producto"
+        Me.IdproductoDataGridViewTextBoxColumn.Name = "IdproductoDataGridViewTextBoxColumn"
+        '
+        'NombreDataGridViewTextBoxColumn
+        '
+        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "nombre"
+        Me.NombreDataGridViewTextBoxColumn.HeaderText = "nombre"
+        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
+        '
+        'PrecioDataGridViewTextBoxColumn
+        '
+        Me.PrecioDataGridViewTextBoxColumn.DataPropertyName = "precio"
+        Me.PrecioDataGridViewTextBoxColumn.HeaderText = "precio"
+        Me.PrecioDataGridViewTextBoxColumn.Name = "PrecioDataGridViewTextBoxColumn"
+        '
+        'ProductoBindingSource
+        '
+        Me.ProductoBindingSource.DataMember = "Producto"
+        Me.ProductoBindingSource.DataSource = Me.LasPalmerasDataSet
+        '
+        'LasPalmerasDataSet
+        '
+        Me.LasPalmerasDataSet.DataSetName = "lasPalmerasDataSet"
+        Me.LasPalmerasDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'lblProductID
         '
@@ -83,26 +111,29 @@ Partial Class frmAdminProducto
         Me.lblPrecio.TabIndex = 3
         Me.lblPrecio.Text = "Precio"
         '
-        'TextBox1
+        'txtProductID
         '
-        Me.TextBox1.Location = New System.Drawing.Point(121, 46)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 5
+        Me.txtProductID.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "id_producto", True))
+        Me.txtProductID.Location = New System.Drawing.Point(121, 46)
+        Me.txtProductID.Name = "txtProductID"
+        Me.txtProductID.Size = New System.Drawing.Size(100, 20)
+        Me.txtProductID.TabIndex = 5
         '
-        'TextBox2
+        'txtNombreProducto
         '
-        Me.TextBox2.Location = New System.Drawing.Point(121, 100)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 6
+        Me.txtNombreProducto.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "nombre", True))
+        Me.txtNombreProducto.Location = New System.Drawing.Point(121, 100)
+        Me.txtNombreProducto.Name = "txtNombreProducto"
+        Me.txtNombreProducto.Size = New System.Drawing.Size(100, 20)
+        Me.txtNombreProducto.TabIndex = 6
         '
-        'TextBox3
+        'txtPrecio
         '
-        Me.TextBox3.Location = New System.Drawing.Point(121, 161)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 7
+        Me.txtPrecio.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "precio", True))
+        Me.txtPrecio.Location = New System.Drawing.Point(121, 161)
+        Me.txtPrecio.Name = "txtPrecio"
+        Me.txtPrecio.Size = New System.Drawing.Size(100, 20)
+        Me.txtPrecio.TabIndex = 7
         '
         'btnAddNew
         '
@@ -140,37 +171,9 @@ Partial Class frmAdminProducto
         Me.btnBorrar.Text = "Borrar"
         Me.btnBorrar.UseVisualStyleBackColor = True
         '
-        'LasPalmerasDataSet
-        '
-        Me.LasPalmerasDataSet.DataSetName = "lasPalmerasDataSet"
-        Me.LasPalmerasDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ProductoBindingSource
-        '
-        Me.ProductoBindingSource.DataMember = "Producto"
-        Me.ProductoBindingSource.DataSource = Me.LasPalmerasDataSet
-        '
         'ProductoTableAdapter
         '
         Me.ProductoTableAdapter.ClearBeforeFill = True
-        '
-        'IdproductoDataGridViewTextBoxColumn
-        '
-        Me.IdproductoDataGridViewTextBoxColumn.DataPropertyName = "id_producto"
-        Me.IdproductoDataGridViewTextBoxColumn.HeaderText = "id_producto"
-        Me.IdproductoDataGridViewTextBoxColumn.Name = "IdproductoDataGridViewTextBoxColumn"
-        '
-        'NombreDataGridViewTextBoxColumn
-        '
-        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "nombre"
-        Me.NombreDataGridViewTextBoxColumn.HeaderText = "nombre"
-        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
-        '
-        'PrecioDataGridViewTextBoxColumn
-        '
-        Me.PrecioDataGridViewTextBoxColumn.DataPropertyName = "precio"
-        Me.PrecioDataGridViewTextBoxColumn.HeaderText = "precio"
-        Me.PrecioDataGridViewTextBoxColumn.Name = "PrecioDataGridViewTextBoxColumn"
         '
         'frmAdminProducto
         '
@@ -181,9 +184,9 @@ Partial Class frmAdminProducto
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnAddNew)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtPrecio)
+        Me.Controls.Add(Me.txtNombreProducto)
+        Me.Controls.Add(Me.txtProductID)
         Me.Controls.Add(Me.lblPrecio)
         Me.Controls.Add(Me.lblNombreP)
         Me.Controls.Add(Me.lblProductID)
@@ -191,8 +194,8 @@ Partial Class frmAdminProducto
         Me.Name = "frmAdminProducto"
         Me.Text = "frmAdminProducto"
         CType(Me.dgvProductos, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LasPalmerasDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LasPalmerasDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -202,9 +205,9 @@ Partial Class frmAdminProducto
     Friend WithEvents lblProductID As Label
     Friend WithEvents lblNombreP As Label
     Friend WithEvents lblPrecio As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtProductID As TextBox
+    Friend WithEvents txtNombreProducto As TextBox
+    Friend WithEvents txtPrecio As TextBox
     Friend WithEvents btnAddNew As Button
     Friend WithEvents btnSalir As Button
     Friend WithEvents btnGuardar As Button

@@ -4,4 +4,23 @@
         Me.ProductoTableAdapter.Fill(Me.LasPalmerasDataSet.Producto)
 
     End Sub
+
+    Private Sub btnAddNew_Click(sender As Object, e As EventArgs) Handles btnAddNew.Click
+        ProductoBindingSource.AddNew()
+    End Sub
+
+    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
+        ProductoBindingSource.EndEdit()
+        ProductoTableAdapter.Update(LasPalmerasDataSet)
+        MessageBox.Show("Datos Guardados")
+    End Sub
+
+    Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
+        ProductoBindingSource.RemoveCurrent()
+    End Sub
+
+    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
+        Me.Hide()
+        frmAdmin.Show()
+    End Sub
 End Class
