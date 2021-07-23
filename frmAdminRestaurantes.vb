@@ -9,10 +9,6 @@
 
     End Sub
 
-    Private Sub dgvRestaurantes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvRestaurantes.CellContentClick
-
-    End Sub
-
     Private Sub btnAgregarRest_Click(sender As Object, e As EventArgs) Handles btnAgregarRest.Click
         RestauranteBindingSource.AddNew()
     End Sub
@@ -36,15 +32,13 @@
         LasPalmerasDataSet.Telefono.Rows.Add(newrow)
     End Sub
 
-    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
-        Me.Hide()
-        frmAdmin.Show()
-    End Sub
-
     Private Sub btnVerTelefonos_Click(sender As Object, e As EventArgs) Handles btnVerTelefonos.Click
         Dim s As String = cboID.Text
         TelefonoBindingSource.Filter() = "id_sucursal= '" & s & "'"
     End Sub
 
-
+    Private Sub pctRegresar_Click(sender As Object, e As EventArgs) Handles pctRegresar.Click
+        Me.Hide()
+        frmAdmin.Show()
+    End Sub
 End Class

@@ -23,6 +23,7 @@ Partial Class frmAdminProducto
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAdminProducto))
         Me.dgvProductos = New System.Windows.Forms.DataGridView()
         Me.IdproductoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -50,6 +51,8 @@ Partial Class frmAdminProducto
         '
         'dgvProductos
         '
+        Me.dgvProductos.AllowUserToAddRows = False
+        Me.dgvProductos.AllowUserToDeleteRows = False
         Me.dgvProductos.AutoGenerateColumns = False
         Me.dgvProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvProductos.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(144, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(239, Byte), Integer))
@@ -60,6 +63,7 @@ Partial Class frmAdminProducto
         Me.dgvProductos.Location = New System.Drawing.Point(510, 129)
         Me.dgvProductos.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvProductos.Name = "dgvProductos"
+        Me.dgvProductos.ReadOnly = True
         Me.dgvProductos.RowHeadersWidth = 51
         Me.dgvProductos.Size = New System.Drawing.Size(468, 408)
         Me.dgvProductos.TabIndex = 0
@@ -70,6 +74,7 @@ Partial Class frmAdminProducto
         Me.IdproductoDataGridViewTextBoxColumn.HeaderText = "id_producto"
         Me.IdproductoDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.IdproductoDataGridViewTextBoxColumn.Name = "IdproductoDataGridViewTextBoxColumn"
+        Me.IdproductoDataGridViewTextBoxColumn.ReadOnly = True
         '
         'NombreDataGridViewTextBoxColumn
         '
@@ -77,6 +82,7 @@ Partial Class frmAdminProducto
         Me.NombreDataGridViewTextBoxColumn.HeaderText = "nombre"
         Me.NombreDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
+        Me.NombreDataGridViewTextBoxColumn.ReadOnly = True
         '
         'PrecioDataGridViewTextBoxColumn
         '
@@ -84,6 +90,7 @@ Partial Class frmAdminProducto
         Me.PrecioDataGridViewTextBoxColumn.HeaderText = "precio"
         Me.PrecioDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.PrecioDataGridViewTextBoxColumn.Name = "PrecioDataGridViewTextBoxColumn"
+        Me.PrecioDataGridViewTextBoxColumn.ReadOnly = True
         '
         'ProductoBindingSource
         '
@@ -265,6 +272,7 @@ Partial Class frmAdminProducto
         Me.Controls.Add(Me.lblProductID)
         Me.Controls.Add(Me.dgvProductos)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmAdminProducto"
         Me.Text = "Admin del producto"
