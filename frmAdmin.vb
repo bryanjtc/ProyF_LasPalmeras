@@ -1,5 +1,6 @@
 ﻿Public Class frmAdmin
     Private Sub pctRegresar_Click(sender As Object, e As EventArgs) Handles pctRegresar.Click
+        frmAddCliente.actualizarTablas()
         Me.Hide()
         frmMenu.Show()
     End Sub
