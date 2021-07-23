@@ -36,7 +36,7 @@ Partial Class frmInfoApp
         Me.lblInfoApp.Font = New System.Drawing.Font("Segoe UI Semibold", 10.8!, System.Drawing.FontStyle.Bold)
         Me.lblInfoApp.Location = New System.Drawing.Point(12, 114)
         Me.lblInfoApp.Name = "lblInfoApp"
-        Me.lblInfoApp.Size = New System.Drawing.Size(1667, 350)
+        Me.lblInfoApp.Size = New System.Drawing.Size(1667, 400)
         Me.lblInfoApp.TabIndex = 0
         Me.lblInfoApp.Text = resources.GetString("lblInfoApp.Text")
         '
