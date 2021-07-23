@@ -1,6 +1,6 @@
 ﻿Imports System.ComponentModel
 Imports System.Data.SqlClient
-Public Class frmNewPedido
+Public Class frmEditPedido
     ReadOnly connect As New SqlClient.SqlConnection("Data Source=herramientas.database.windows.net;Initial Catalog=lasPalmeras;Persist Security Info=True;User ID=bryan;Password=kpgA@F!obNqN6Grog2sP")
 
     Private Sub ExecuteQuery(Query As String)

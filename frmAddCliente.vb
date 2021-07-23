@@ -22,17 +22,17 @@
     End Sub
 
     Public Sub actualizarTablas()
-        frmNewPedido.ClienteBindingSource.EndEdit()
-        frmNewPedido.PedidoBindingSource.EndEdit()
-        frmNewPedido.RestauranteBindingSource.EndEdit()
-        frmNewPedido.MotorizadoBindingSource.EndEdit()
-        frmNewPedido.PedidoProductoBindingSource.EndEdit()
-        frmNewPedido.PedidoTableAdapter.Update(LasPalmerasDataSet)
-        frmNewPedido.RestauranteTableAdapter.Update(LasPalmerasDataSet)
-        frmNewPedido.MotorizadoTableAdapter.Update(LasPalmerasDataSet)
-        frmNewPedido.Pedido_ProductoTableAdapter.Update(LasPalmerasDataSet)
-        frmNewPedido.ClienteTableAdapter.Update(LasPalmerasDataSet)
-        frmNewPedido.ClienteBindingSource1.EndEdit()
+        frmEditPedido.ClienteBindingSource.EndEdit()
+        frmEditPedido.PedidoBindingSource.EndEdit()
+        frmEditPedido.RestauranteBindingSource.EndEdit()
+        frmEditPedido.MotorizadoBindingSource.EndEdit()
+        frmEditPedido.PedidoProductoBindingSource.EndEdit()
+        frmEditPedido.PedidoTableAdapter.Update(LasPalmerasDataSet)
+        frmEditPedido.RestauranteTableAdapter.Update(LasPalmerasDataSet)
+        frmEditPedido.MotorizadoTableAdapter.Update(LasPalmerasDataSet)
+        frmEditPedido.Pedido_ProductoTableAdapter.Update(LasPalmerasDataSet)
+        frmEditPedido.ClienteTableAdapter.Update(LasPalmerasDataSet)
+        frmEditPedido.ClienteBindingSource1.EndEdit()
         frmVerClientes.ClienteBindingSource.EndEdit()
         frmVerClientes.ClienteTableAdapter.Update(LasPalmerasDataSet)
         frmAdminMotorizado.MotorizadoBindingSource.EndEdit()
@@ -50,6 +50,6 @@
     Private Sub pctRegresar_Click(sender As Object, e As EventArgs) Handles pctRegresar.Click
         actualizarTablas()
         Me.Hide()
-        frmNewPedido.Show()
+        frmEditPedido.Show()
     End Sub
 End Class

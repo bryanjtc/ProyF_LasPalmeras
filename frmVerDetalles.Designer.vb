@@ -56,8 +56,9 @@ Partial Class frmVerDetalles
         'txtPedidoID
         '
         Me.txtPedidoID.Location = New System.Drawing.Point(258, 117)
-        Me.txtPedidoID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPedidoID.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPedidoID.Name = "txtPedidoID"
+        Me.txtPedidoID.ReadOnly = True
         Me.txtPedidoID.Size = New System.Drawing.Size(132, 22)
         Me.txtPedidoID.TabIndex = 1
         '
@@ -71,7 +72,7 @@ Partial Class frmVerDetalles
         Me.dgvDetalles.DataSource = Me.PedidoProductoBindingSource
         Me.dgvDetalles.GridColor = System.Drawing.Color.FromArgb(CType(CType(144, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(239, Byte), Integer))
         Me.dgvDetalles.Location = New System.Drawing.Point(13, 147)
-        Me.dgvDetalles.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvDetalles.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvDetalles.Name = "dgvDetalles"
         Me.dgvDetalles.RowHeadersWidth = 51
         Me.dgvDetalles.Size = New System.Drawing.Size(452, 418)
@@ -158,7 +159,7 @@ Partial Class frmVerDetalles
         Me.Controls.Add(Me.lblPedidoID)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmVerDetalles"
         Me.Text = "Detalles"
         CType(Me.dgvDetalles, System.ComponentModel.ISupportInitialize).EndInit()

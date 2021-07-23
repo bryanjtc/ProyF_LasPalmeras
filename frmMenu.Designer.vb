@@ -86,7 +86,7 @@ Partial Class frmMenu
         Me.btnNuevoPedido.Name = "btnNuevoPedido"
         Me.btnNuevoPedido.Size = New System.Drawing.Size(290, 76)
         Me.btnNuevoPedido.TabIndex = 1
-        Me.btnNuevoPedido.Text = "Nuevo pedido"
+        Me.btnNuevoPedido.Text = "Editar pedido"
         Me.btnNuevoPedido.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnNuevoPedido.UseVisualStyleBackColor = False
         '

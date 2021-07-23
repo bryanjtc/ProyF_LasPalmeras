@@ -22,7 +22,7 @@
     Private Sub btnNuevoPedido_Click(sender As Object, e As EventArgs) Handles btnNuevoPedido.Click
         frmAddCliente.actualizarTablas()
         Me.Hide()
-        frmNewPedido.Show()
+        frmEditPedido.Show()
     End Sub
 
 
