@@ -36,7 +36,7 @@ Partial Class frmInfoApp
         Me.lblInfoApp.Font = New System.Drawing.Font("Segoe UI Semibold", 10.8!, System.Drawing.FontStyle.Bold)
         Me.lblInfoApp.Location = New System.Drawing.Point(12, 114)
         Me.lblInfoApp.Name = "lblInfoApp"
-        Me.lblInfoApp.Size = New System.Drawing.Size(1667, 400)
+        Me.lblInfoApp.Size = New System.Drawing.Size(1667, 500)
         Me.lblInfoApp.TabIndex = 0
         Me.lblInfoApp.Text = resources.GetString("lblInfoApp.Text")
         '
@@ -75,7 +75,7 @@ Partial Class frmInfoApp
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1711, 611)
+        Me.ClientSize = New System.Drawing.Size(1711, 654)
         Me.Controls.Add(Me.lbltTitulo)
         Me.Controls.Add(Me.lblRegresar)
         Me.Controls.Add(Me.pctRegresar)
