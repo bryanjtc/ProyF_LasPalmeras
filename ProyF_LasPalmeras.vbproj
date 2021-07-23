@@ -173,19 +173,5 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\back.png" />
-    <Content Include="Resources\budget.png" />
-    <Content Include="Resources\customer.png" />
-    <Content Include="Resources\delivery-bike.png" />
-    <Content Include="Resources\exit.png" />
-    <Content Include="Resources\order.png" />
-    <Content Include="Resources\palm-tree.ico" />
-    <Content Include="Resources\palm-tree.png" />
-    <Content Include="Resources\received.png" />
-    <Content Include="Resources\received1.png" />
-    <Content Include="Resources\restaurant.png" />
-    <Content Include="Resources\to-do-list.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

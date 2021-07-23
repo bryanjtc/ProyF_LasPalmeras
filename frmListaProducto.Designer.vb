@@ -39,10 +39,10 @@ Partial Class frmListaProducto
         '
         Me.lblListaProducto.AutoSize = True
         Me.lblListaProducto.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.lblListaProducto.Font = New System.Drawing.Font("Segoe UI", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblListaProducto.Location = New System.Drawing.Point(234, 34)
+        Me.lblListaProducto.Font = New System.Drawing.Font("Segoe UI", 22.2!, System.Drawing.FontStyle.Bold)
+        Me.lblListaProducto.Location = New System.Drawing.Point(234, 27)
         Me.lblListaProducto.Name = "lblListaProducto"
-        Me.lblListaProducto.Size = New System.Drawing.Size(342, 50)
+        Me.lblListaProducto.Size = New System.Drawing.Size(350, 51)
         Me.lblListaProducto.TabIndex = 0
         Me.lblListaProducto.Text = "Lista de Productos"
         Me.lblListaProducto.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -52,12 +52,11 @@ Partial Class frmListaProducto
         Me.dgvListaProducto.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(144, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(239, Byte), Integer))
         Me.dgvListaProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvListaProducto.GridColor = System.Drawing.Color.FromArgb(CType(CType(144, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(239, Byte), Integer))
-        Me.dgvListaProducto.Location = New System.Drawing.Point(15, 119)
-        Me.dgvListaProducto.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.dgvListaProducto.Location = New System.Drawing.Point(15, 95)
         Me.dgvListaProducto.Name = "dgvListaProducto"
         Me.dgvListaProducto.RowHeadersWidth = 51
         Me.dgvListaProducto.RowTemplate.Height = 25
-        Me.dgvListaProducto.Size = New System.Drawing.Size(775, 375)
+        Me.dgvListaProducto.Size = New System.Drawing.Size(775, 300)
         Me.dgvListaProducto.TabIndex = 1
         '
         'btnSeleccionar
@@ -68,12 +67,11 @@ Partial Class frmListaProducto
         Me.btnSeleccionar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.btnSeleccionar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.btnSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSeleccionar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnSeleccionar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnSeleccionar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnSeleccionar.Location = New System.Drawing.Point(583, 512)
-        Me.btnSeleccionar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnSeleccionar.Location = New System.Drawing.Point(583, 410)
         Me.btnSeleccionar.Name = "btnSeleccionar"
-        Me.btnSeleccionar.Size = New System.Drawing.Size(207, 49)
+        Me.btnSeleccionar.Size = New System.Drawing.Size(207, 39)
         Me.btnSeleccionar.TabIndex = 3
         Me.btnSeleccionar.Text = "Agregar al Pedido"
         Me.btnSeleccionar.UseVisualStyleBackColor = True
@@ -81,8 +79,8 @@ Partial Class frmListaProducto
         'lblCantidad
         '
         Me.lblCantidad.AutoSize = True
-        Me.lblCantidad.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblCantidad.Location = New System.Drawing.Point(415, 522)
+        Me.lblCantidad.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblCantidad.Location = New System.Drawing.Point(415, 418)
         Me.lblCantidad.Name = "lblCantidad"
         Me.lblCantidad.Size = New System.Drawing.Size(92, 28)
         Me.lblCantidad.TabIndex = 4
@@ -91,29 +89,37 @@ Partial Class frmListaProducto
         'numCantidad
         '
         Me.numCantidad.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.numCantidad.Location = New System.Drawing.Point(513, 523)
-        Me.numCantidad.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.numCantidad.Location = New System.Drawing.Point(513, 418)
         Me.numCantidad.Name = "numCantidad"
-        Me.numCantidad.Size = New System.Drawing.Size(50, 27)
+        Me.numCantidad.Size = New System.Drawing.Size(50, 22)
         Me.numCantidad.TabIndex = 5
         Me.numCantidad.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'lblRegresar
         '
         Me.lblRegresar.AutoSize = True
-        Me.lblRegresar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblRegresar.Location = New System.Drawing.Point(30, 76)
+        Me.lblRegresar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblRegresar.Location = New System.Drawing.Point(30, 61)
         Me.lblRegresar.Name = "lblRegresar"
         Me.lblRegresar.Size = New System.Drawing.Size(90, 28)
         Me.lblRegresar.TabIndex = 25
         Me.lblRegresar.Text = "Regresar"
         '
+        'pctRegresar
+        '
+        Me.pctRegresar.Location = New System.Drawing.Point(0, 0)
+        Me.pctRegresar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pctRegresar.Name = "pctRegresar"
+        Me.pctRegresar.Size = New System.Drawing.Size(100, 40)
+        Me.pctRegresar.TabIndex = 26
+        Me.pctRegresar.TabStop = False
+        '
         'frmListaProducto
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(144, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(239, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(802, 574)
+        Me.ClientSize = New System.Drawing.Size(802, 459)
         Me.Controls.Add(Me.lblRegresar)
         Me.Controls.Add(Me.pctRegresar)
         Me.Controls.Add(Me.numCantidad)
@@ -123,7 +129,6 @@ Partial Class frmListaProducto
         Me.Controls.Add(Me.lblListaProducto)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frmListaProducto"
         Me.Text = "Lista de productos"
         CType(Me.dgvListaProducto, System.ComponentModel.ISupportInitialize).EndInit()
