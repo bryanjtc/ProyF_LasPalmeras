@@ -4,7 +4,7 @@
         Me.ClienteTableAdapter.Fill(Me.LasPalmerasDataSet.Cliente)
 
     End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
         Dim newrow As DataRow = LasPalmerasDataSet.Tables("Cliente").NewRow()
         newrow(0) = txtCedula.Text
         newrow(1) = txtNombre.Text
@@ -21,11 +21,6 @@
         txtDirec.Text = ""
     End Sub
 
-    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
-        actualizarTablas()
-        Me.Hide()
-        frmNewPedido.Show()
-    End Sub
     Public Sub actualizarTablas()
         frmNewPedido.ClienteBindingSource.EndEdit()
         frmNewPedido.PedidoBindingSource.EndEdit()
@@ -52,4 +47,9 @@
 
     End Sub
 
+    Private Sub pctRegresar_Click(sender As Object, e As EventArgs) Handles pctRegresar.Click
+        actualizarTablas()
+        Me.Hide()
+        frmNewPedido.Show()
+    End Sub
 End Class

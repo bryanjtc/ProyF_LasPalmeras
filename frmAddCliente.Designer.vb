@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmAddCliente
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,10 @@ Partial Class frmAddCliente
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAddCliente))
         Me.txtCedula = New System.Windows.Forms.TextBox()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtApellido = New System.Windows.Forms.TextBox()
@@ -30,11 +31,11 @@ Partial Class frmAddCliente
         Me.txtDirec = New System.Windows.Forms.TextBox()
         Me.Cedula = New System.Windows.Forms.Label()
         Me.Nombre = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.lblApellido = New System.Windows.Forms.Label()
+        Me.lblTelefono = New System.Windows.Forms.Label()
+        Me.lblDireccion = New System.Windows.Forms.Label()
+        Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.dgvClientes = New System.Windows.Forms.DataGridView()
         Me.CedulaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ApellidoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -43,141 +44,177 @@ Partial Class frmAddCliente
         Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LasPalmerasDataSet = New ProyF_LasPalmeras.lasPalmerasDataSet()
         Me.ClienteTableAdapter = New ProyF_LasPalmeras.lasPalmerasDataSetTableAdapters.ClienteTableAdapter()
-        Me.btnBack = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pctRegresar = New System.Windows.Forms.PictureBox()
+        Me.lblRegresar = New System.Windows.Forms.Label()
+        Me.lblTitulo = New System.Windows.Forms.Label()
+        CType(Me.dgvClientes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LasPalmerasDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctRegresar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtCedula
         '
-        Me.txtCedula.Location = New System.Drawing.Point(363, 45)
+        Me.txtCedula.Location = New System.Drawing.Point(165, 120)
+        Me.txtCedula.Margin = New System.Windows.Forms.Padding(4)
         Me.txtCedula.Name = "txtCedula"
-        Me.txtCedula.Size = New System.Drawing.Size(184, 20)
+        Me.txtCedula.Size = New System.Drawing.Size(244, 22)
         Me.txtCedula.TabIndex = 0
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(363, 84)
+        Me.txtNombre.Location = New System.Drawing.Point(165, 168)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(184, 20)
+        Me.txtNombre.Size = New System.Drawing.Size(244, 22)
         Me.txtNombre.TabIndex = 1
         '
         'txtApellido
         '
-        Me.txtApellido.Location = New System.Drawing.Point(363, 126)
+        Me.txtApellido.Location = New System.Drawing.Point(165, 220)
+        Me.txtApellido.Margin = New System.Windows.Forms.Padding(4)
         Me.txtApellido.Name = "txtApellido"
-        Me.txtApellido.Size = New System.Drawing.Size(184, 20)
+        Me.txtApellido.Size = New System.Drawing.Size(244, 22)
         Me.txtApellido.TabIndex = 2
         '
         'txtTelefono
         '
-        Me.txtTelefono.Location = New System.Drawing.Point(363, 166)
+        Me.txtTelefono.Location = New System.Drawing.Point(165, 269)
+        Me.txtTelefono.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTelefono.Name = "txtTelefono"
-        Me.txtTelefono.Size = New System.Drawing.Size(184, 20)
+        Me.txtTelefono.Size = New System.Drawing.Size(244, 22)
         Me.txtTelefono.TabIndex = 3
         '
         'txtDirec
         '
-        Me.txtDirec.Location = New System.Drawing.Point(363, 202)
+        Me.txtDirec.Location = New System.Drawing.Point(165, 324)
+        Me.txtDirec.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDirec.Name = "txtDirec"
-        Me.txtDirec.Size = New System.Drawing.Size(184, 20)
+        Me.txtDirec.Size = New System.Drawing.Size(244, 22)
         Me.txtDirec.TabIndex = 4
         '
         'Cedula
         '
         Me.Cedula.AutoSize = True
-        Me.Cedula.Location = New System.Drawing.Point(262, 45)
+        Me.Cedula.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
+        Me.Cedula.Location = New System.Drawing.Point(30, 120)
+        Me.Cedula.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Cedula.Name = "Cedula"
-        Me.Cedula.Size = New System.Drawing.Size(40, 13)
+        Me.Cedula.Size = New System.Drawing.Size(93, 32)
         Me.Cedula.TabIndex = 5
         Me.Cedula.Text = "Cedula"
         '
         'Nombre
         '
         Me.Nombre.AutoSize = True
-        Me.Nombre.Location = New System.Drawing.Point(262, 84)
+        Me.Nombre.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
+        Me.Nombre.Location = New System.Drawing.Point(30, 168)
+        Me.Nombre.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Nombre.Name = "Nombre"
-        Me.Nombre.Size = New System.Drawing.Size(44, 13)
+        Me.Nombre.Size = New System.Drawing.Size(109, 32)
         Me.Nombre.TabIndex = 6
         Me.Nombre.Text = "Nombre"
         '
-        'Label3
+        'lblApellido
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(262, 126)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(44, 13)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Apellido"
+        Me.lblApellido.AutoSize = True
+        Me.lblApellido.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
+        Me.lblApellido.Location = New System.Drawing.Point(30, 220)
+        Me.lblApellido.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblApellido.Name = "lblApellido"
+        Me.lblApellido.Size = New System.Drawing.Size(111, 32)
+        Me.lblApellido.TabIndex = 7
+        Me.lblApellido.Text = "Apellido"
         '
-        'Label4
+        'lblTelefono
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(262, 166)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(49, 13)
-        Me.Label4.TabIndex = 8
-        Me.Label4.Text = "Telefono"
+        Me.lblTelefono.AutoSize = True
+        Me.lblTelefono.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
+        Me.lblTelefono.Location = New System.Drawing.Point(30, 269)
+        Me.lblTelefono.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTelefono.Name = "lblTelefono"
+        Me.lblTelefono.Size = New System.Drawing.Size(114, 32)
+        Me.lblTelefono.TabIndex = 8
+        Me.lblTelefono.Text = "Telefono"
         '
-        'Label5
+        'lblDireccion
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(265, 208)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(52, 13)
-        Me.Label5.TabIndex = 9
-        Me.Label5.Text = "Direccion"
+        Me.lblDireccion.AutoSize = True
+        Me.lblDireccion.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
+        Me.lblDireccion.Location = New System.Drawing.Point(30, 314)
+        Me.lblDireccion.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDireccion.Name = "lblDireccion"
+        Me.lblDireccion.Size = New System.Drawing.Size(124, 32)
+        Me.lblDireccion.TabIndex = 9
+        Me.lblDireccion.Text = "Direccion"
         '
-        'Button1
+        'btnAgregar
         '
-        Me.Button1.Location = New System.Drawing.Point(349, 250)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 10
-        Me.Button1.Text = "Agregar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.btnAgregar.FlatAppearance.BorderSize = 4
+        Me.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAgregar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnAgregar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnAgregar.Location = New System.Drawing.Point(678, 186)
+        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(111, 56)
+        Me.btnAgregar.TabIndex = 10
+        Me.btnAgregar.Text = "Agregar"
+        Me.btnAgregar.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'dgvClientes
         '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CedulaDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.ApellidoDataGridViewTextBoxColumn, Me.TelefonoDataGridViewTextBoxColumn, Me.DireccionDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.ClienteBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 288)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(758, 150)
-        Me.DataGridView1.TabIndex = 11
+        Me.dgvClientes.AutoGenerateColumns = False
+        Me.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvClientes.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(144, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvClientes.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CedulaDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.ApellidoDataGridViewTextBoxColumn, Me.TelefonoDataGridViewTextBoxColumn, Me.DireccionDataGridViewTextBoxColumn})
+        Me.dgvClientes.DataSource = Me.ClienteBindingSource
+        Me.dgvClientes.GridColor = System.Drawing.Color.FromArgb(CType(CType(144, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.dgvClientes.Location = New System.Drawing.Point(16, 354)
+        Me.dgvClientes.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvClientes.Name = "dgvClientes"
+        Me.dgvClientes.RowHeadersWidth = 51
+        Me.dgvClientes.Size = New System.Drawing.Size(1011, 185)
+        Me.dgvClientes.TabIndex = 11
         '
         'CedulaDataGridViewTextBoxColumn
         '
         Me.CedulaDataGridViewTextBoxColumn.DataPropertyName = "cedula"
         Me.CedulaDataGridViewTextBoxColumn.HeaderText = "cedula"
+        Me.CedulaDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.CedulaDataGridViewTextBoxColumn.Name = "CedulaDataGridViewTextBoxColumn"
         '
         'NombreDataGridViewTextBoxColumn
         '
         Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "nombre"
         Me.NombreDataGridViewTextBoxColumn.HeaderText = "nombre"
+        Me.NombreDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
         '
         'ApellidoDataGridViewTextBoxColumn
         '
         Me.ApellidoDataGridViewTextBoxColumn.DataPropertyName = "apellido"
         Me.ApellidoDataGridViewTextBoxColumn.HeaderText = "apellido"
+        Me.ApellidoDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.ApellidoDataGridViewTextBoxColumn.Name = "ApellidoDataGridViewTextBoxColumn"
         '
         'TelefonoDataGridViewTextBoxColumn
         '
         Me.TelefonoDataGridViewTextBoxColumn.DataPropertyName = "telefono"
         Me.TelefonoDataGridViewTextBoxColumn.HeaderText = "telefono"
+        Me.TelefonoDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.TelefonoDataGridViewTextBoxColumn.Name = "TelefonoDataGridViewTextBoxColumn"
         '
         'DireccionDataGridViewTextBoxColumn
         '
         Me.DireccionDataGridViewTextBoxColumn.DataPropertyName = "direccion"
         Me.DireccionDataGridViewTextBoxColumn.HeaderText = "direccion"
+        Me.DireccionDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.DireccionDataGridViewTextBoxColumn.Name = "DireccionDataGridViewTextBoxColumn"
         '
         'ClienteBindingSource
@@ -194,26 +231,51 @@ Partial Class frmAddCliente
         '
         Me.ClienteTableAdapter.ClearBeforeFill = True
         '
-        'btnBack
+        'pctRegresar
         '
-        Me.btnBack.Location = New System.Drawing.Point(472, 250)
-        Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(75, 23)
-        Me.btnBack.TabIndex = 12
-        Me.btnBack.Text = "Back"
-        Me.btnBack.UseVisualStyleBackColor = True
+        Me.pctRegresar.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.back
+        Me.pctRegresar.Location = New System.Drawing.Point(51, 22)
+        Me.pctRegresar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pctRegresar.Name = "pctRegresar"
+        Me.pctRegresar.Size = New System.Drawing.Size(51, 50)
+        Me.pctRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctRegresar.TabIndex = 27
+        Me.pctRegresar.TabStop = False
+        '
+        'lblRegresar
+        '
+        Me.lblRegresar.AutoSize = True
+        Me.lblRegresar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblRegresar.Location = New System.Drawing.Point(34, 68)
+        Me.lblRegresar.Name = "lblRegresar"
+        Me.lblRegresar.Size = New System.Drawing.Size(90, 28)
+        Me.lblRegresar.TabIndex = 26
+        Me.lblRegresar.Text = "Regresar"
+        '
+        'lblTitulo
+        '
+        Me.lblTitulo.AutoSize = True
+        Me.lblTitulo.Font = New System.Drawing.Font("Segoe UI", 22.2!, System.Drawing.FontStyle.Bold)
+        Me.lblTitulo.Location = New System.Drawing.Point(386, 20)
+        Me.lblTitulo.Name = "lblTitulo"
+        Me.lblTitulo.Size = New System.Drawing.Size(304, 51)
+        Me.lblTitulo.TabIndex = 25
+        Me.lblTitulo.Text = "Agregar Cliente"
         '
         'frmAddCliente
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(782, 450)
-        Me.Controls.Add(Me.btnBack)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1043, 554)
+        Me.Controls.Add(Me.pctRegresar)
+        Me.Controls.Add(Me.lblRegresar)
+        Me.Controls.Add(Me.lblTitulo)
+        Me.Controls.Add(Me.dgvClientes)
+        Me.Controls.Add(Me.btnAgregar)
+        Me.Controls.Add(Me.lblDireccion)
+        Me.Controls.Add(Me.lblTelefono)
+        Me.Controls.Add(Me.lblApellido)
         Me.Controls.Add(Me.Nombre)
         Me.Controls.Add(Me.Cedula)
         Me.Controls.Add(Me.txtDirec)
@@ -221,11 +283,15 @@ Partial Class frmAddCliente
         Me.Controls.Add(Me.txtApellido)
         Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.txtCedula)
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmAddCliente"
-        Me.Text = "frmAddCliente"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "Agregar Cliente"
+        CType(Me.dgvClientes, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LasPalmerasDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctRegresar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -238,11 +304,11 @@ Partial Class frmAddCliente
     Friend WithEvents txtDirec As TextBox
     Friend WithEvents Cedula As Label
     Friend WithEvents Nombre As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents lblApellido As Label
+    Friend WithEvents lblTelefono As Label
+    Friend WithEvents lblDireccion As Label
+    Friend WithEvents btnAgregar As Button
+    Friend WithEvents dgvClientes As DataGridView
     Friend WithEvents LasPalmerasDataSet As lasPalmerasDataSet
     Friend WithEvents ClienteBindingSource As BindingSource
     Friend WithEvents ClienteTableAdapter As lasPalmerasDataSetTableAdapters.ClienteTableAdapter
@@ -251,5 +317,7 @@ Partial Class frmAddCliente
     Friend WithEvents ApellidoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents TelefonoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents DireccionDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents btnBack As Button
+    Friend WithEvents pctRegresar As PictureBox
+    Friend WithEvents lblRegresar As Label
+    Friend WithEvents lblTitulo As Label
 End Class
