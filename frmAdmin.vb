@@ -1,7 +1,7 @@
 ﻿Public Class frmAdmin
     Private Sub pctRegresar_Click(sender As Object, e As EventArgs) Handles pctRegresar.Click
         Me.Hide()
-        frmMenu.Hide()
+        frmMenu.Show()
     End Sub
 
     Private Sub pctSalir_Click(sender As Object, e As EventArgs) Handles pctSalir.Click

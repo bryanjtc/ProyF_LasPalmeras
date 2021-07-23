@@ -62,12 +62,13 @@ Partial Class frmVerPedidos
         Me.dgvPedidos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NumpedidoDataGridViewTextBoxColumn, Me.IdsucursalDataGridViewTextBoxColumn, Me.IdmotorizadoDataGridViewTextBoxColumn, Me.CedulaDataGridViewTextBoxColumn, Me.HoraentregaDataGridViewTextBoxColumn, Me.CostoentregaDataGridViewTextBoxColumn, Me.ValortotalDataGridViewTextBoxColumn})
         Me.dgvPedidos.DataSource = Me.PedidoBindingSource
         Me.dgvPedidos.GridColor = System.Drawing.Color.FromArgb(CType(CType(144, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(239, Byte), Integer))
-        Me.dgvPedidos.Location = New System.Drawing.Point(33, 154)
+        Me.dgvPedidos.Location = New System.Drawing.Point(25, 125)
+        Me.dgvPedidos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.dgvPedidos.Name = "dgvPedidos"
         Me.dgvPedidos.ReadOnly = True
         Me.dgvPedidos.RowHeadersWidth = 51
         Me.dgvPedidos.RowTemplate.Height = 25
-        Me.dgvPedidos.Size = New System.Drawing.Size(1362, 351)
+        Me.dgvPedidos.Size = New System.Drawing.Size(1022, 285)
         Me.dgvPedidos.TabIndex = 0
         '
         'NumpedidoDataGridViewTextBoxColumn
@@ -140,9 +141,10 @@ Partial Class frmVerPedidos
         '
         Me.lblSucursal.AutoSize = True
         Me.lblSucursal.Font = New System.Drawing.Font("Segoe UI Semibold", 16.2!, System.Drawing.FontStyle.Bold)
-        Me.lblSucursal.Location = New System.Drawing.Point(33, 109)
+        Me.lblSucursal.Location = New System.Drawing.Point(25, 89)
+        Me.lblSucursal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblSucursal.Name = "lblSucursal"
-        Me.lblSucursal.Size = New System.Drawing.Size(121, 38)
+        Me.lblSucursal.Size = New System.Drawing.Size(95, 30)
         Me.lblSucursal.TabIndex = 1
         Me.lblSucursal.Text = "Sucursal"
         '
@@ -153,9 +155,10 @@ Partial Class frmVerPedidos
         Me.cboSucursales.DisplayMember = "nombre"
         Me.cboSucursales.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboSucursales.FormattingEnabled = True
-        Me.cboSucursales.Location = New System.Drawing.Point(160, 116)
+        Me.cboSucursales.Location = New System.Drawing.Point(120, 94)
+        Me.cboSucursales.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cboSucursales.Name = "cboSucursales"
-        Me.cboSucursales.Size = New System.Drawing.Size(1123, 24)
+        Me.cboSucursales.Size = New System.Drawing.Size(843, 21)
         Me.cboSucursales.TabIndex = 2
         Me.cboSucursales.ValueMember = "id_sucursal"
         '
@@ -174,9 +177,10 @@ Partial Class frmVerPedidos
         Me.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSelect.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnSelect.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnSelect.Location = New System.Drawing.Point(1309, 100)
+        Me.btnSelect.Location = New System.Drawing.Point(982, 81)
+        Me.btnSelect.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnSelect.Name = "btnSelect"
-        Me.btnSelect.Size = New System.Drawing.Size(86, 46)
+        Me.btnSelect.Size = New System.Drawing.Size(64, 37)
         Me.btnSelect.TabIndex = 3
         Me.btnSelect.Text = "Ver"
         Me.btnSelect.UseVisualStyleBackColor = True
@@ -191,9 +195,10 @@ Partial Class frmVerPedidos
         Me.btmVerDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btmVerDetalles.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btmVerDetalles.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btmVerDetalles.Location = New System.Drawing.Point(1237, 511)
+        Me.btmVerDetalles.Location = New System.Drawing.Point(928, 415)
+        Me.btmVerDetalles.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btmVerDetalles.Name = "btmVerDetalles"
-        Me.btmVerDetalles.Size = New System.Drawing.Size(158, 52)
+        Me.btmVerDetalles.Size = New System.Drawing.Size(118, 42)
         Me.btmVerDetalles.TabIndex = 4
         Me.btmVerDetalles.Text = "Ver Detalles"
         Me.btmVerDetalles.UseVisualStyleBackColor = True
@@ -202,18 +207,20 @@ Partial Class frmVerPedidos
         '
         Me.lblRegresar.AutoSize = True
         Me.lblRegresar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.lblRegresar.Location = New System.Drawing.Point(35, 75)
+        Me.lblRegresar.Location = New System.Drawing.Point(26, 61)
+        Me.lblRegresar.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblRegresar.Name = "lblRegresar"
-        Me.lblRegresar.Size = New System.Drawing.Size(90, 28)
+        Me.lblRegresar.Size = New System.Drawing.Size(75, 21)
         Me.lblRegresar.TabIndex = 26
         Me.lblRegresar.Text = "Regresar"
         '
         'pctRegresar
         '
         Me.pctRegresar.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.back
-        Me.pctRegresar.Location = New System.Drawing.Point(52, 22)
+        Me.pctRegresar.Location = New System.Drawing.Point(39, 18)
+        Me.pctRegresar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pctRegresar.Name = "pctRegresar"
-        Me.pctRegresar.Size = New System.Drawing.Size(50, 50)
+        Me.pctRegresar.Size = New System.Drawing.Size(38, 41)
         Me.pctRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctRegresar.TabIndex = 25
         Me.pctRegresar.TabStop = False
@@ -222,9 +229,10 @@ Partial Class frmVerPedidos
         '
         Me.lbltTitulo.AutoSize = True
         Me.lbltTitulo.Font = New System.Drawing.Font("Segoe UI", 22.2!, System.Drawing.FontStyle.Bold)
-        Me.lbltTitulo.Location = New System.Drawing.Point(611, 22)
+        Me.lbltTitulo.Location = New System.Drawing.Point(458, 18)
+        Me.lbltTitulo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbltTitulo.Name = "lbltTitulo"
-        Me.lbltTitulo.Size = New System.Drawing.Size(313, 51)
+        Me.lbltTitulo.Size = New System.Drawing.Size(247, 41)
         Me.lbltTitulo.TabIndex = 24
         Me.lbltTitulo.Text = "Lista de pedidos"
         '
@@ -238,10 +246,10 @@ Partial Class frmVerPedidos
         '
         'frmVerPedidos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1493, 579)
+        Me.ClientSize = New System.Drawing.Size(1120, 470)
         Me.Controls.Add(Me.lblRegresar)
         Me.Controls.Add(Me.pctRegresar)
         Me.Controls.Add(Me.lbltTitulo)
@@ -252,6 +260,7 @@ Partial Class frmVerPedidos
         Me.Controls.Add(Me.dgvPedidos)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmVerPedidos"
         Me.Text = "Ver Pedidos"
         CType(Me.dgvPedidos, System.ComponentModel.ISupportInitialize).EndInit()
