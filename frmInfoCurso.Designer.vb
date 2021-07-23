@@ -34,7 +34,7 @@ Partial Class frmInfoCurso
         Me.lblInfoCurso.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.lblInfoCurso.Location = New System.Drawing.Point(25, 18)
         Me.lblInfoCurso.Name = "lblInfoCurso"
-        Me.lblInfoCurso.Size = New System.Drawing.Size(476, 756)
+        Me.lblInfoCurso.Size = New System.Drawing.Size(476, 504)
         Me.lblInfoCurso.TabIndex = 0
         Me.lblInfoCurso.Text = resources.GetString("lblInfoCurso.Text")
         Me.lblInfoCurso.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -49,9 +49,9 @@ Partial Class frmInfoCurso
         Me.btnVerProyecto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVerProyecto.Font = New System.Drawing.Font("Segoe UI", 16.2!)
         Me.btnVerProyecto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnVerProyecto.Location = New System.Drawing.Point(30, 835)
+        Me.btnVerProyecto.Location = New System.Drawing.Point(12, 568)
         Me.btnVerProyecto.Name = "btnVerProyecto"
-        Me.btnVerProyecto.Size = New System.Drawing.Size(225, 94)
+        Me.btnVerProyecto.Size = New System.Drawing.Size(243, 94)
         Me.btnVerProyecto.TabIndex = 1
         Me.btnVerProyecto.Text = "Proyecto Las Palmeras"
         Me.btnVerProyecto.UseVisualStyleBackColor = False
@@ -66,9 +66,9 @@ Partial Class frmInfoCurso
         Me.btnVerInfoApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVerInfoApp.Font = New System.Drawing.Font("Segoe UI", 16.2!)
         Me.btnVerInfoApp.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnVerInfoApp.Location = New System.Drawing.Point(276, 835)
+        Me.btnVerInfoApp.Location = New System.Drawing.Point(276, 568)
         Me.btnVerInfoApp.Name = "btnVerInfoApp"
-        Me.btnVerInfoApp.Size = New System.Drawing.Size(225, 94)
+        Me.btnVerInfoApp.Size = New System.Drawing.Size(247, 94)
         Me.btnVerInfoApp.TabIndex = 2
         Me.btnVerInfoApp.Text = "Informacion de la aplicacion"
         Me.btnVerInfoApp.UseVisualStyleBackColor = False
@@ -78,7 +78,7 @@ Partial Class frmInfoCurso
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(535, 982)
+        Me.ClientSize = New System.Drawing.Size(535, 706)
         Me.Controls.Add(Me.btnVerInfoApp)
         Me.Controls.Add(Me.btnVerProyecto)
         Me.Controls.Add(Me.lblInfoCurso)

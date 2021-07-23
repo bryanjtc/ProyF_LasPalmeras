@@ -1,6 +1,7 @@
 ﻿Public Class frmMenu
-    Private Sub botona_Click(sender As Object, e As EventArgs) Handles btnVerPedidos.Click
-
+    Private Sub btnVerPedidos_Click(sender As Object, e As EventArgs) Handles btnVerPedidos.Click
+        Me.Hide()
+        frmVerPedidos.Show()
     End Sub
 
 
@@ -12,5 +13,12 @@
 
     End Sub
 
+    Private Sub pctRegresar_Click(sender As Object, e As EventArgs) Handles pctRegresar.Click
+        Me.Hide()
+        frmInfoCurso.Show()
+    End Sub
 
+    Private Sub pctSalir_Click(sender As Object, e As EventArgs) Handles pctSalir.Click
+        End
+    End Sub
 End Class

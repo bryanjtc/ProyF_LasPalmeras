@@ -34,11 +34,14 @@ Partial Class frmMenu
         Me.pctAdmin = New System.Windows.Forms.PictureBox()
         Me.pctLogo = New System.Windows.Forms.PictureBox()
         Me.pctSalir = New System.Windows.Forms.PictureBox()
+        Me.pctRegresar = New System.Windows.Forms.PictureBox()
+        Me.lblRegresar = New System.Windows.Forms.Label()
         CType(Me.pctPedidos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pctNewPedido, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pctAdmin, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pctLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pctSalir, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctRegresar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblTitulo
@@ -61,7 +64,7 @@ Partial Class frmMenu
         Me.btnAdministracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAdministracion.Font = New System.Drawing.Font("Segoe UI", 16.2!)
         Me.btnAdministracion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnAdministracion.Location = New System.Drawing.Point(12, 240)
+        Me.btnAdministracion.Location = New System.Drawing.Point(30, 241)
         Me.btnAdministracion.Name = "btnAdministracion"
         Me.btnAdministracion.Size = New System.Drawing.Size(290, 76)
         Me.btnAdministracion.TabIndex = 0
@@ -79,7 +82,7 @@ Partial Class frmMenu
         Me.btnNuevoPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnNuevoPedido.Font = New System.Drawing.Font("Segoe UI", 16.2!)
         Me.btnNuevoPedido.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnNuevoPedido.Location = New System.Drawing.Point(316, 240)
+        Me.btnNuevoPedido.Location = New System.Drawing.Point(334, 241)
         Me.btnNuevoPedido.Name = "btnNuevoPedido"
         Me.btnNuevoPedido.Size = New System.Drawing.Size(290, 76)
         Me.btnNuevoPedido.TabIndex = 1
@@ -97,7 +100,7 @@ Partial Class frmMenu
         Me.btnVerPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVerPedidos.Font = New System.Drawing.Font("Segoe UI", 16.2!)
         Me.btnVerPedidos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnVerPedidos.Location = New System.Drawing.Point(618, 240)
+        Me.btnVerPedidos.Location = New System.Drawing.Point(636, 241)
         Me.btnVerPedidos.Name = "btnVerPedidos"
         Me.btnVerPedidos.Size = New System.Drawing.Size(290, 76)
         Me.btnVerPedidos.TabIndex = 2
@@ -119,7 +122,7 @@ Partial Class frmMenu
         '
         Me.lblSalir.AutoSize = True
         Me.lblSalir.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.lblSalir.Location = New System.Drawing.Point(810, 335)
+        Me.lblSalir.Location = New System.Drawing.Point(828, 335)
         Me.lblSalir.Name = "lblSalir"
         Me.lblSalir.Size = New System.Drawing.Size(62, 32)
         Me.lblSalir.TabIndex = 10
@@ -129,7 +132,7 @@ Partial Class frmMenu
         '
         Me.pctPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.pctPedidos.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.to_do_list
-        Me.pctPedidos.Location = New System.Drawing.Point(646, 261)
+        Me.pctPedidos.Location = New System.Drawing.Point(664, 262)
         Me.pctPedidos.Name = "pctPedidos"
         Me.pctPedidos.Size = New System.Drawing.Size(40, 40)
         Me.pctPedidos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -140,7 +143,7 @@ Partial Class frmMenu
         '
         Me.pctNewPedido.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.pctNewPedido.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.order
-        Me.pctNewPedido.Location = New System.Drawing.Point(348, 256)
+        Me.pctNewPedido.Location = New System.Drawing.Point(366, 257)
         Me.pctNewPedido.Name = "pctNewPedido"
         Me.pctNewPedido.Size = New System.Drawing.Size(45, 45)
         Me.pctNewPedido.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -151,7 +154,7 @@ Partial Class frmMenu
         '
         Me.pctAdmin.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.pctAdmin.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.budget
-        Me.pctAdmin.Location = New System.Drawing.Point(41, 261)
+        Me.pctAdmin.Location = New System.Drawing.Point(59, 262)
         Me.pctAdmin.Name = "pctAdmin"
         Me.pctAdmin.Size = New System.Drawing.Size(40, 40)
         Me.pctAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -171,12 +174,32 @@ Partial Class frmMenu
         'pctSalir
         '
         Me.pctSalir.Image = Global.ProyF_LasPalmeras.My.Resources.Resources._exit
-        Me.pctSalir.Location = New System.Drawing.Point(878, 337)
+        Me.pctSalir.Location = New System.Drawing.Point(896, 337)
         Me.pctSalir.Name = "pctSalir"
         Me.pctSalir.Size = New System.Drawing.Size(30, 30)
         Me.pctSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctSalir.TabIndex = 19
         Me.pctSalir.TabStop = False
+        '
+        'pctRegresar
+        '
+        Me.pctRegresar.Image = Global.ProyF_LasPalmeras.My.Resources.Resources.back
+        Me.pctRegresar.Location = New System.Drawing.Point(12, 337)
+        Me.pctRegresar.Name = "pctRegresar"
+        Me.pctRegresar.Size = New System.Drawing.Size(30, 30)
+        Me.pctRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctRegresar.TabIndex = 26
+        Me.pctRegresar.TabStop = False
+        '
+        'lblRegresar
+        '
+        Me.lblRegresar.AutoSize = True
+        Me.lblRegresar.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold)
+        Me.lblRegresar.Location = New System.Drawing.Point(48, 335)
+        Me.lblRegresar.Name = "lblRegresar"
+        Me.lblRegresar.Size = New System.Drawing.Size(110, 32)
+        Me.lblRegresar.TabIndex = 27
+        Me.lblRegresar.Text = "Regresar"
         '
         'frmMenu
         '
@@ -184,7 +207,9 @@ Partial Class frmMenu
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(921, 379)
+        Me.ClientSize = New System.Drawing.Size(938, 379)
+        Me.Controls.Add(Me.lblRegresar)
+        Me.Controls.Add(Me.pctRegresar)
         Me.Controls.Add(Me.pctPedidos)
         Me.Controls.Add(Me.pctNewPedido)
         Me.Controls.Add(Me.pctAdmin)
@@ -206,6 +231,7 @@ Partial Class frmMenu
         CType(Me.pctAdmin, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pctLogo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pctSalir, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctRegresar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -225,4 +251,6 @@ Partial Class frmMenu
     Friend WithEvents pctAdmin As PictureBox
     Friend WithEvents pctNewPedido As PictureBox
     Friend WithEvents pctPedidos As PictureBox
+    Friend WithEvents pctRegresar As PictureBox
+    Friend WithEvents lblRegresar As Label
 End Class

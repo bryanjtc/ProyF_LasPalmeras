@@ -115,6 +115,11 @@
     <Compile Include="frmVerPedidos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="lasPalmerasDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lasPalmerasDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -162,6 +167,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="lasPalmerasDataSet.xsc">
+      <DependentUpon>lasPalmerasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="lasPalmerasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>lasPalmerasDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="lasPalmerasDataSet.xss">
+      <DependentUpon>lasPalmerasDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
