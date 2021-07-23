@@ -55,7 +55,7 @@ Partial Class frmAdmin
         Me.btnAgregarProducto.Font = New System.Drawing.Font("Segoe UI", 16.2!)
         Me.btnAgregarProducto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.btnAgregarProducto.Location = New System.Drawing.Point(155, 103)
-        Me.btnAgregarProducto.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAgregarProducto.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAgregarProducto.Name = "btnAgregarProducto"
         Me.btnAgregarProducto.Size = New System.Drawing.Size(254, 46)
         Me.btnAgregarProducto.TabIndex = 0
@@ -74,7 +74,7 @@ Partial Class frmAdmin
         Me.btnAgregarRest.Font = New System.Drawing.Font("Segoe UI", 16.2!)
         Me.btnAgregarRest.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.btnAgregarRest.Location = New System.Drawing.Point(155, 163)
-        Me.btnAgregarRest.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAgregarRest.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAgregarRest.Name = "btnAgregarRest"
         Me.btnAgregarRest.Size = New System.Drawing.Size(254, 46)
         Me.btnAgregarRest.TabIndex = 1
@@ -93,7 +93,7 @@ Partial Class frmAdmin
         Me.btnAgregarMotorizado.Font = New System.Drawing.Font("Segoe UI", 16.2!)
         Me.btnAgregarMotorizado.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.btnAgregarMotorizado.Location = New System.Drawing.Point(155, 221)
-        Me.btnAgregarMotorizado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAgregarMotorizado.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAgregarMotorizado.Name = "btnAgregarMotorizado"
         Me.btnAgregarMotorizado.Size = New System.Drawing.Size(254, 47)
         Me.btnAgregarMotorizado.TabIndex = 2
@@ -112,7 +112,7 @@ Partial Class frmAdmin
         Me.btnVerClientes.Font = New System.Drawing.Font("Segoe UI", 16.2!)
         Me.btnVerClientes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.btnVerClientes.Location = New System.Drawing.Point(155, 285)
-        Me.btnVerClientes.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnVerClientes.Margin = New System.Windows.Forms.Padding(2)
         Me.btnVerClientes.Name = "btnVerClientes"
         Me.btnVerClientes.Size = New System.Drawing.Size(254, 48)
         Me.btnVerClientes.TabIndex = 3
@@ -246,7 +246,7 @@ Partial Class frmAdmin
         Me.Controls.Add(Me.btnAgregarProducto)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmAdmin"
         Me.Text = "Administracion"
         CType(Me.pctSalir, System.ComponentModel.ISupportInitialize).EndInit()

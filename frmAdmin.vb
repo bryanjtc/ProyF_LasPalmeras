@@ -22,4 +22,9 @@
         Me.Hide()
         frmAdminMotorizado.Show()
     End Sub
+
+    Private Sub btnVerClientes_Click(sender As Object, e As EventArgs) Handles btnVerClientes.Click
+        Me.Hide()
+        frmVerClientes.Show()
+    End Sub
 End Class
