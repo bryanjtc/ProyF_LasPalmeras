@@ -6,4 +6,9 @@
         PedidoProductoBindingSource.Filter() = "num_pedido= '" & txtPedidoID.Text & "'"
 
     End Sub
+
+    Private Sub pctRegresar_Click(sender As Object, e As EventArgs) Handles pctRegresar.Click
+        Me.Hide()
+        frmVerPedidos.Show()
+    End Sub
 End Class

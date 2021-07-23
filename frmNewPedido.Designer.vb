@@ -28,6 +28,7 @@ Partial Class frmNewPedido
         Me.cboClienteID = New System.Windows.Forms.ComboBox()
         Me.PedidoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LasPalmerasDataSet = New ProyF_LasPalmeras.lasPalmerasDataSet()
+        Me.ClienteBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.btnAgregarCliente = New System.Windows.Forms.Button()
         Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.lblRestaurante = New System.Windows.Forms.Label()
@@ -48,7 +49,6 @@ Partial Class frmNewPedido
         Me.lblPedido = New System.Windows.Forms.Label()
         Me.lblPedidoAct = New System.Windows.Forms.Label()
         Me.btnAddProducto = New System.Windows.Forms.Button()
-        Me.btnBorrar = New System.Windows.Forms.Button()
         Me.btnConfirmar = New System.Windows.Forms.Button()
         Me.lblTotal = New System.Windows.Forms.Label()
         Me.txtTotal = New System.Windows.Forms.TextBox()
@@ -75,10 +75,10 @@ Partial Class frmNewPedido
         Me.ProductoTableAdapter = New ProyF_LasPalmeras.lasPalmerasDataSetTableAdapters.ProductoTableAdapter()
         Me.lblCantidad = New System.Windows.Forms.Label()
         Me.txtCantidad = New System.Windows.Forms.TextBox()
-        Me.ClienteBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.btnGuardar = New System.Windows.Forms.Button()
         CType(Me.PedidoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LasPalmerasDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ClienteBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RestauranteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MotorizadoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,7 +87,6 @@ Partial Class frmNewPedido
         CType(Me.pctRegresar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvPedido, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ClienteBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblClienteID
@@ -123,6 +122,11 @@ Partial Class frmNewPedido
         '
         Me.LasPalmerasDataSet.DataSetName = "lasPalmerasDataSet"
         Me.LasPalmerasDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ClienteBindingSource1
+        '
+        Me.ClienteBindingSource1.DataMember = "Cliente"
+        Me.ClienteBindingSource1.DataSource = Me.LasPalmerasDataSet
         '
         'btnAgregarCliente
         '
@@ -330,24 +334,6 @@ Partial Class frmNewPedido
         Me.btnAddProducto.TabIndex = 16
         Me.btnAddProducto.Text = "Agregar al pedido"
         Me.btnAddProducto.UseVisualStyleBackColor = False
-        '
-        'btnBorrar
-        '
-        Me.btnBorrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.btnBorrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.btnBorrar.FlatAppearance.BorderSize = 4
-        Me.btnBorrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.btnBorrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBorrar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.btnBorrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnBorrar.Location = New System.Drawing.Point(34, 537)
-        Me.btnBorrar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnBorrar.Name = "btnBorrar"
-        Me.btnBorrar.Size = New System.Drawing.Size(147, 51)
-        Me.btnBorrar.TabIndex = 17
-        Me.btnBorrar.Text = "Borrar"
-        Me.btnBorrar.UseVisualStyleBackColor = False
         '
         'btnConfirmar
         '
@@ -574,11 +560,6 @@ Partial Class frmNewPedido
         Me.txtCantidad.Size = New System.Drawing.Size(168, 22)
         Me.txtCantidad.TabIndex = 30
         '
-        'ClienteBindingSource1
-        '
-        Me.ClienteBindingSource1.DataMember = "Cliente"
-        Me.ClienteBindingSource1.DataSource = Me.LasPalmerasDataSet
-        '
         'btnGuardar
         '
         Me.btnGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(94, Byte), Integer))
@@ -589,7 +570,7 @@ Partial Class frmNewPedido
         Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuardar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnGuardar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(202, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnGuardar.Location = New System.Drawing.Point(214, 537)
+        Me.btnGuardar.Location = New System.Drawing.Point(36, 537)
         Me.btnGuardar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(147, 51)
@@ -616,7 +597,6 @@ Partial Class frmNewPedido
         Me.Controls.Add(Me.txtTotal)
         Me.Controls.Add(Me.lblTotal)
         Me.Controls.Add(Me.btnConfirmar)
-        Me.Controls.Add(Me.btnBorrar)
         Me.Controls.Add(Me.btnAddProducto)
         Me.Controls.Add(Me.lblPedidoAct)
         Me.Controls.Add(Me.lblPedido)
@@ -639,6 +619,7 @@ Partial Class frmNewPedido
         Me.Text = "Nuevo Pedido"
         CType(Me.PedidoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LasPalmerasDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ClienteBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RestauranteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MotorizadoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -647,7 +628,6 @@ Partial Class frmNewPedido
         CType(Me.pctRegresar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvPedido, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ClienteBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -675,7 +655,6 @@ Partial Class frmNewPedido
     Friend WithEvents lblMotorizado As Label
     Friend WithEvents lblPedidoAct As Label
     Friend WithEvents btnAddProducto As Button
-    Friend WithEvents btnBorrar As Button
     Friend WithEvents btnConfirmar As Button
     Friend WithEvents lblPedid As Label
     Friend WithEvents txtTotal As TextBox

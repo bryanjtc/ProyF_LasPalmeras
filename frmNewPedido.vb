@@ -10,7 +10,7 @@ Public Class frmNewPedido
         connect.Close()
     End Sub
 
-    Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
+    Private Sub btnBorrar_Click(sender As Object, e As EventArgs) 
 
     End Sub
 
