@@ -37,6 +37,7 @@
         frmNewPedido.MotorizadoTableAdapter.Update(LasPalmerasDataSet)
         frmNewPedido.Pedido_ProductoTableAdapter.Update(LasPalmerasDataSet)
         frmNewPedido.ClienteTableAdapter.Update(LasPalmerasDataSet)
+        frmNewPedido.ClienteBindingSource1.EndEdit()
         frmVerClientes.ClienteBindingSource.EndEdit()
         frmVerClientes.ClienteTableAdapter.Update(LasPalmerasDataSet)
         frmAdminMotorizado.MotorizadoBindingSource.EndEdit()
