@@ -45,7 +45,6 @@ Partial Class frmAdminRestaurantes
         Me.TelefonoTableAdapter = New ProyF_LasPalmeras.lasPalmerasDataSetTableAdapters.TelefonoTableAdapter()
         Me.RestauranteTableAdapter = New ProyF_LasPalmeras.lasPalmerasDataSetTableAdapters.RestauranteTableAdapter()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.cboID = New System.Windows.Forms.ComboBox()
         Me.RestauranteBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.dgvRestaurantes, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -224,15 +223,6 @@ Partial Class frmAdminRestaurantes
         Me.Label1.TabIndex = 18
         Me.Label1.Text = "ID Seleccionado"
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(64, 341)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(155, 23)
-        Me.Button1.TabIndex = 20
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'cboID
         '
         Me.cboID.DataSource = Me.RestauranteBindingSource1
@@ -254,7 +244,6 @@ Partial Class frmAdminRestaurantes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(840, 450)
         Me.Controls.Add(Me.cboID)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnTeleAdd)
         Me.Controls.Add(Me.btnVerTelefonos)
@@ -303,7 +292,6 @@ Partial Class frmAdminRestaurantes
     Friend WithEvents IdsucursalDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents NombreDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
     Friend WithEvents cboID As ComboBox
     Friend WithEvents RestauranteBindingSource1 As BindingSource
 End Class

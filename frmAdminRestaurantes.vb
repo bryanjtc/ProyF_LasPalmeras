@@ -28,7 +28,7 @@
     End Sub
 
     Private Sub btnTeleAdd_Click(sender As Object, e As EventArgs) Handles btnTeleAdd.Click
-        Dim selected As String = InputBox("Restaurante", "indique el ID del Cliente")
+        Dim selected As String = cboID.Text
         Dim telefone As String = InputBox("Telefono", "Mete un telefono")
         Dim newrow As DataRow = LasPalmerasDataSet.Tables("Telefono").NewRow()
         newrow(0) = selected
