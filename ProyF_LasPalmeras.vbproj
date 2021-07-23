@@ -79,6 +79,12 @@
     <Compile Include="frmAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmAdminMotorizado.Designer.vb">
+      <DependentUpon>frmAdminMotorizado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminMotorizado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmAdminProducto.Designer.vb">
       <DependentUpon>frmAdminProducto.vb</DependentUpon>
     </Compile>
@@ -121,6 +127,12 @@
     <Compile Include="frmMenu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmVerClientes.Designer.vb">
+      <DependentUpon>frmVerClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmVerDetalles.Designer.vb">
       <DependentUpon>frmVerDetalles.vb</DependentUpon>
     </Compile>
@@ -159,6 +171,9 @@
     <EmbeddedResource Include="frmAdmin.resx">
       <DependentUpon>frmAdmin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminMotorizado.resx">
+      <DependentUpon>frmAdminMotorizado.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAdminProducto.resx">
       <DependentUpon>frmAdminProducto.vb</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerClientes.resx">
+      <DependentUpon>frmVerClientes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVerDetalles.resx">
       <DependentUpon>frmVerDetalles.vb</DependentUpon>

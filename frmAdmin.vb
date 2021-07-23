@@ -17,4 +17,9 @@
         Me.Hide()
         frmAdminRestaurantes.Show()
     End Sub
+
+    Private Sub btnAgregarMotorizado_Click(sender As Object, e As EventArgs) Handles btnAgregarMotorizado.Click
+        Me.Hide()
+        frmAdminMotorizado.Show()
+    End Sub
 End Class
